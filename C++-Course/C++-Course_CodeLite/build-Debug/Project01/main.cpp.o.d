@@ -1,0 +1,1 @@
+../build-Debug/Project01/main.cpp.o: main.cpp
