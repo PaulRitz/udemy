@@ -1,0 +1,13 @@
+set(SECTION "section08")
+
+add_subdirectory(ArithmeticOperators)
+add_subdirectory(AssignementOperator)
+add_subdirectory(CodeChallenge)
+add_subdirectory(ProgrammingExercise01)
+add_subdirectory(ProgrammingExercise02)
+add_subdirectory(LogicalOperators)
+add_subdirectory(EqualityOperators)
+add_subdirectory(Euros)
+add_subdirectory(IncrementDecrementOperators)
+add_subdirectory(MixedExpressions)
+add_subdirectory(RelationalOperators)

@@ -41,7 +41,7 @@ int main() {
 
     // Example 2 - preincrement
     cout << "\n============================" << endl << endl;
-    //Example 3 - postincrement
+    // Example 3 - postincrement
     counter = 10;
     result = 0;
 
@@ -51,9 +51,32 @@ int main() {
     cout << "Counter: " << counter << endl;
     cout << "Result: " << result << endl;
     
-    //Example 3 - postincrement
+    // Example 3 - postincrement
     cout << "\n============================" << endl << endl;
+    // Example 4
+    counter = 10;
+    result = 0;
 
+    cout << "Counter: " << counter << endl;
+
+    result = ++counter + 10;
+
+    cout << "Counter: " << counter << endl;
+    cout << "Result: " << result << endl;
+    // Example 4
+    cout << "\n============================" << endl << endl;
+    // Example 5
+    counter = 10;
+    result = 0;
+
+    cout << "Counter: " << counter << endl;
+
+    result = counter++ + 10;
+
+    cout << "Counter: " << counter << endl;
+    cout << "Result: " << result << endl;
+    // Example 5
+    cout << "\n============================" << endl << endl;
 
     return 0;
 }
