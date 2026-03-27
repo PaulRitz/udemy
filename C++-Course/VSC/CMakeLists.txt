@@ -11,6 +11,10 @@ set(CMAKE_CXX_EXTENSIONS            OFF)
 set(EXECUTABLE_NAME executable)
 set(LIBRARY_NAME library)
 
+set(CMAKE_MODULE_PATH "${PROJECT_SOURCE_DIR}/cmake/")
+
+include(Docs)
+
 add_subdirectory(section01)
 add_subdirectory(section04)
 add_subdirectory(section05)
@@ -18,3 +22,4 @@ add_subdirectory(section06)
 add_subdirectory(section07)
 add_subdirectory(section08)
 add_subdirectory(section09)
+add_subdirectory(section10)

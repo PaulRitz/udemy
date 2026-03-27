@@ -39,3 +39,6 @@ updateCMake:
 clean:
 	rm -rf build
 	rm -rf ../../build
+
+dependency:
+	cd build && cmake .. --graphviz=graph.dot && dot -Tpng graph.dot -o graphImage.png
