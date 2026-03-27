@@ -12,6 +12,7 @@
  */
 
 #include <iostream>
+#include <iomanip>
 
 using namespace std;
 
@@ -30,6 +31,8 @@ int main() {
 
     int package_volume {};
 
+    cout << fixed << setprecision(2);
+
     cout << "Welcome to the shipping cost calculator!" << endl;
     cout << "Please enter length width and height separated by spaces: ";
     cin >> length >> width >> height;
@@ -38,6 +41,7 @@ int main() {
         cout << "Only packages with dimensions less than or equal to 10 inches are allowed!";
     } else {
         package_volume = length * width * height;
+        cout << "The package size is: " << package_volume << endl;
         if (package_volume >= tier2_threshold){
             cout << "The charge for shipping this package is: $" << base_cost + (base_cost * tier2_surcharge) << endl;
             cout << "There is a 25% surcharge because the dimensions of the package [" << package_volume << "] exceed " << tier2_threshold << ".";

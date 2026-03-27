@@ -1,4 +1,5 @@
-set(SECTION "section08")
+# set(SECTION "section08")
+get_filename_component(SECTION ${CMAKE_CURRENT_SOURCE_DIR} NAME)
 
 add_subdirectory(ArithmeticOperators)
 add_subdirectory(AssignementOperator)

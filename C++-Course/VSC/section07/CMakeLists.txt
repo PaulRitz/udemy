@@ -1,4 +1,5 @@
-set(SECTION "section07")
+# set(SECTION "section07")
+get_filename_component(SECTION ${CMAKE_CURRENT_SOURCE_DIR} NAME)
 
 add_subdirectory(Arrays)
 add_subdirectory(CodeChallenge)
