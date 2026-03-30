@@ -1,0 +1,14 @@
+# set(SECTION "section09")
+get_filename_component(SECTION ${CMAKE_CURRENT_SOURCE_DIR} NAME)
+
+
+add_subdirectory(Math)
+add_subdirectory(Random)
+add_subdirectory(ProgrammingExercise01)
+add_subdirectory(FunctionDefinitions)
+add_subdirectory(FunctionParameters)
+add_subdirectory(ProgrammingExercise02)
+add_subdirectory(DefaultArguments)
+add_subdirectory(ProgrammingExercise03)
+add_subdirectory(ProgrammingExercise04)
+add_subdirectory(FunctionOverloading)
