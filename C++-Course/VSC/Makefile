@@ -15,7 +15,7 @@ nP:
 	@cp templates/InProjectCMake.template section$(S)/$(PN)/CMakeLists.txt
 	@echo "Adding a new subdirectory to section$(S) level CMakeLists file."
 	@echo "add_subdirectory($(PN))" >> section$(S)/CMakeLists.txt
-	@touch section$(S)/$(PN)/include/CMakeLists.txt
+	@cp templates/InIncludeCMake.template section$(S)/$(PN)/include/CMakeLists.txt
 	@echo "Ordnerstruktur für section$(S)/$(PN) erstellt"
 
 
@@ -39,9 +39,10 @@ newStandard:
 	@if [ -z "$(TN)" ]; then echo "Fehler: TN ist leer!"; exit 1; fi
 	cp templates/project_templates/$(TN)/src/main.cpp templates/main.cpp.template
 
+
 updateCMake:
 	@echo "Adding a new subdirectory in top level CMakeLists file."
-	@echo "add_subdirectory(section$(S))" >> CMakeLists.txt
+	@sed -i "/# SUBDIRECTORIES/a add_subdirectory(section$(S))" CMakeLists.txt
 
 clean:
 	rm -rf build

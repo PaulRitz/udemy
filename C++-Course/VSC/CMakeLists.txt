@@ -17,15 +17,16 @@ set(CMAKE_MODULE_PATH "${PROJECT_SOURCE_DIR}/cmake/")
 
 include(Docs)
 
-add_subdirectory(section01)
-add_subdirectory(section04)
-add_subdirectory(section05)
-add_subdirectory(section06)
-add_subdirectory(section07)
-add_subdirectory(section08)
-add_subdirectory(section09)
-add_subdirectory(section10)
+# SUBDIRECTORIES
 add_subdirectory(section11)
+add_subdirectory(section10)
+add_subdirectory(section09)
+add_subdirectory(section08)
+add_subdirectory(section07)
+add_subdirectory(section06)
+add_subdirectory(section05)
+add_subdirectory(section04)
+add_subdirectory(section01)
 
 set(CPACK_MODE "full" CACHE STRING "Mode: 'full' oder 'challenges' oder 'custom'")
 
