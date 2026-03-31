@@ -7,3 +7,7 @@ string(APPEND FULL_NAME "_" ${PROJ_NAME})
 
 add_executable(${FULL_NAME}
         ${EXE_SOURCES})
+
+install(TARGETS ${EXECUTABLE_NAME}_${SECTION}_${PROJ_NAME}
+        DESTINATION bin
+        COMPONENT ${SECTION}_${PROJ_NAME})

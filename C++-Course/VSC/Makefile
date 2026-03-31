@@ -36,7 +36,7 @@ rmSection:
 	@echo "Subdirectory aus top level CMakeLists.txt file entfernt"
 
 newStandard:
-	@if [ -z "$(TN)" ]; then echo "Fehler: PN ist leer!"; exit 1; fi
+	@if [ -z "$(TN)" ]; then echo "Fehler: TN ist leer!"; exit 1; fi
 	cp templates/project_templates/$(TN)/src/main.cpp templates/main.cpp.template
 
 updateCMake:
@@ -48,8 +48,25 @@ clean:
 	rm -rf ../../build
 
 clean-all:
-	find . -type d -name "build" -exec rm -rf {} +
+	find ../.. -type d -name "build" -exec rm -rf {} +
 	@echo "Alle build-Ordner wurden gelöscht."
 
 dependency:
 	cd build && cmake .. --graphviz=graph.dot && dot -Tpng graph.dot -o graphImage.png
+
+pack-all:
+	cd ../../build && \
+	cmake -DCPACK_MODE=full ../C++-Course/VSC/ && \
+	cpack
+
+pack-challenges:
+	cd ../../build && \
+	cmake -DCPACK_MODE=challenges ../C++-Course/VSC/ && \
+	cpack
+
+pack-custom:
+	@if [ -z "$(PN)" ]; then echo "Fehler: PN ist leer!"; exit 1; fi
+	@if [ -z "$(S)" ]; then echo "Fehler: S ist leer!"; exit 1; fi
+	cd ../../build && \
+	cmake -DCPACK_MODE=custom -DCPACK_CUSTOM_COMPONENTS="section${S}_${PN}" ../C++-Course/VSC/ && \
+	cpack
