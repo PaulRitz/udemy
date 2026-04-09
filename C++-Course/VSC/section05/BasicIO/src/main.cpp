@@ -1,3 +1,29 @@
+/**
+ * @file main.cpp
+ * @brief overview over basic inputs and outputs
+ * @details showcases the behavior of basic input and output functionality of <iostream>
+ */
+
+/**
+ * @defgroup section05 Section05: Basic Tools
+ * @{
+ * @brief this section gives an overview over commonly used functions of C and the way code is usually written
+ * @}
+ */
+
+/**
+  * @addtogroup section05
+  * @{
+  * @defgroup s05_p01 BasicIO
+  * @brief overview over basic inputs and outputs
+  * @details showcases the behavior of basic input and output functionality of <iostream>
+  * @}
+  */
+
+/**
+ * @addtogroup s05_p01
+ * @{
+ */
 #include <iostream>
 
 using namespace std;
@@ -52,3 +78,4 @@ int main() {
 
     return 0;
 }
+/** @} */

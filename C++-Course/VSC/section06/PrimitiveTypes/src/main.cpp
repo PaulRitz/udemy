@@ -1,3 +1,23 @@
+/**
+ * @file main.cpp
+ * @brief showcase over the most basic data types in c++
+ * @details showcase of the behavior and the usecases for different data types in
+ */
+
+/**
+ * @addtogroup section06
+ * @{
+ * @defgroup s06_p04 PrimitiveTypes
+ * @brief showcase over the most basic data types in c++
+ * @details showcase of the behavior and the usecases for different data types in
+ * c++.
+ * @}
+ */
+
+ /**
+  * @addtogroup s06_p04
+  * @{
+  */
 #include <iostream>
 
 using namespace std;
@@ -87,3 +107,4 @@ int main() {
 
     return 0;
 }
+/** @} */

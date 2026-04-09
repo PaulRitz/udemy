@@ -1,3 +1,22 @@
+/**
+ * @file main.cpp
+ * @brief Exercise to getting to know C++
+ * @details Get to know the usage of basic inputs and outputs
+ */
+
+/**
+ * @addtogroup section05
+ * @{
+ * @defgroup s05_p04 ProgrammingExercise01
+ * @brief Exercise to getting to know C++
+ * @details Get to know the usage of basic inputs and outputs
+ * @}
+ */
+
+ /**
+  * @addtogroup s05_p04
+  * @{
+  */
 #include <iostream>
 
 using namespace std;
@@ -27,3 +46,4 @@ int main() {
 
     return 0;
 }
+/** @} */

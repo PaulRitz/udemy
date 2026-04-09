@@ -33,6 +33,7 @@ rmProject:
 rmSection:
 	@rm -rf section$(S)
 	@sed -i '/add_subdirectory(section$(S))/d' CMakeLists.txt
+	@sed -i '/section$(S)/d' CMakeLists.txt
 	@echo "Subdirectory aus top level CMakeLists.txt file entfernt"
 
 newStandard:
@@ -43,10 +44,13 @@ newStandard:
 updateCMake:
 	@echo "Adding a new subdirectory in top level CMakeLists file."
 	@sed -i "/# SUBDIRECTORIES/a add_subdirectory(section$(S))" CMakeLists.txt
+	@sed -i "/# SECTION-INSTALL-TARGETS /a \ \tsection$(S)" CMakeLists.txt
 
 clean:
 	rm -rf build
 	rm -rf ../../build
+	rm -rf docs
+	mkdir docs
 
 clean-all:
 	find ../.. -type d -name "build" -exec rm -rf {} +

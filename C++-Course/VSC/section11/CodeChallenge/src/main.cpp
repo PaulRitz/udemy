@@ -1,5 +1,6 @@
 /**
- * Code Challenge for Section 11 is to modify Code Challenge from Section 9
+ * @file main.cpp
+ * @details Code Challenge for Section 11 is to modify Code Challenge from Section 9
  * --> This means Section 9 Code should use functions
  */
 
@@ -65,39 +66,49 @@ bool func_tree(char choice, vector<int> &list, bool &allow_duplicates){
         case 'p':
         case 'P':
             print_vector(list);
+            cout << "---------------------------------------" << endl;
+
             break;
         case 'a':
         case 'A':
             append_to_vector(list, allow_duplicates);
+            cout << "---------------------------------------" << endl;
             break;
         case 'm':
         case 'M':
             calc_average(list);
+            cout << "---------------------------------------" << endl;
             break;
         case 's':
         case 'S':
             cout << "Determine smallest number in List: " << endl;
             find_extreme(true, list);
+            cout << "---------------------------------------" << endl;
             break;
         case 'l':
         case 'L':
             cout << "Determine largest number in List:" << endl;
             find_extreme(false, list);
+            cout << "---------------------------------------" << endl;
             break;
         case 'c':
         case 'C':
             clear_vector(list);
+            cout << "---------------------------------------" << endl;
             break;
         case 'f':
         case 'F':
             search_for_num(list);
+            cout << "---------------------------------------" << endl;
             break;
         case 'd':
         case 'D':
             allow_duplicates = set_duplicate_allowance(allow_duplicates, list);
+            cout << "---------------------------------------" << endl;
             break;
         default:
             cout << "Unknown selection - Please try again..." << endl;
+            cout << "---------------------------------------" << endl;
     }
     return false;
 }

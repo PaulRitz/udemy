@@ -1,3 +1,20 @@
+/**
+ * @file main.cpp
+ * @brief program to file an employee profile
+ */
+
+/**
+ * @addtogroup section06
+ * @{
+ * @defgroup s06_p05 ProgrammingExercise01
+ * @brief program to file an employee profile
+ * @}
+ */
+
+ /**
+  * @addtogroup s06_p05
+  * @{
+  */
 #include <iostream>
 
 using namespace std;
@@ -19,3 +36,4 @@ int main() {
 
     return 0;
 }
+/** @} */

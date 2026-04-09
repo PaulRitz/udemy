@@ -1,3 +1,20 @@
+/**
+ * @file main.cpp
+ * @brief showcase of the information there is to get about different data types
+ */
+
+/**
+ * @addtogroup section06
+ * @{
+ * @defgroup s06_p06 SizeofOperator
+ * @brief showcase of the information there is to get about different data types
+ * @}
+ */
+
+ /**
+  * @addtogroup s06_p06
+  * @{
+  */
 #include <iostream>
 #include <climits> 
 //every info that is gathered by climits here can be gathered with <cfloat> as well
@@ -56,3 +73,4 @@ int main() {
 
     return 0;
 }
+/** @} */

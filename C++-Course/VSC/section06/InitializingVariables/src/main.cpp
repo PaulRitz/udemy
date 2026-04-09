@@ -1,3 +1,20 @@
+/**
+ * @file main.cpp
+ * @brief showcase of how to initialize variables correctly
+ */
+
+/**
+ * @addtogroup section06
+ * @{
+ * @defgroup s06_p03 InitializingVariables
+ * @brief showcase of how to initialize variables correctly
+ * @}
+ */
+
+ /**
+  * @addtogroup s06_p03
+  * @{
+  */
 #include <iostream>
 
 using namespace std;
@@ -17,3 +34,4 @@ int main() {
 
     return 0;
 }
+/** @} */

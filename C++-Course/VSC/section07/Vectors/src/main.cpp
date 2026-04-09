@@ -1,3 +1,20 @@
+/**
+ * @file main.cpp
+ * @brief get to know c++ vectors and their syntax 
+ */
+
+/**
+ * @addtogroup section07
+ * @{
+ * @defgroup s07_p05 Vectors
+ * @brief get to know c++ vectors and their syntax
+ * @}
+ */
+
+ /**
+  * @addtogroup s07_p05
+  * @{
+  */
 #include <iostream>
 #include <vector> // required when using vectors
 
@@ -107,3 +124,4 @@ int main() {
     cout << endl;
     return 0;
 }
+/** @} */

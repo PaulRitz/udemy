@@ -1,3 +1,25 @@
+/**
+ * @file main.cpp
+ * @brief showcase of arrays in c++
+ */
+
+/**
+ * @defgroup section07 Section 07: Arrays and Vectors
+ * @brief showcase of arrays and vectors
+ */
+
+ /** 
+  * @addtogroup section07
+  * @{
+  * @defgroup s07_p01 Arrays
+  * @brief showcase of arrays in c++
+  * @}
+  */
+
+  /**
+   * @addtogroup s07_p01
+   * @{
+   */
 #include <iostream>
 
 using namespace std;
@@ -54,3 +76,4 @@ int main() {
 
     return 0;
 }
+/** @} */

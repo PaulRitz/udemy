@@ -1,3 +1,23 @@
+/**
+ * @file main.cpp
+ * @brief Overview of Comments in Cpp
+ * @details Showcase of the usage of Comments
+ */
+
+/**
+ * @addtogroup section05
+ * @{
+ * @defgroup s05_p02 Comments
+ * @brief Overview of Comments in Cpp
+ * @details Showcase of the usage of Comments
+ * @}
+ */
+
+/**
+ * @addtogroup s05_p02
+ * @{
+ */
+
 /*******************************************
  * 
  * author:
@@ -33,3 +53,4 @@ int main() {
 
     return 0;
 }
+/** @} */

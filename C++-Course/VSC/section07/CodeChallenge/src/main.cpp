@@ -1,3 +1,19 @@
+/**
+ * @file main.cpp
+ * @brief CodeChallenge Goal: learn to work with vectors
+ */
+
+/** @addtogroup section07
+ * @{
+ * @defgroup s07_p02 CodeChallenge
+ * @brief CodeChallenge Goal: learn to work with vectors
+ * @}
+ */
+
+ /**
+  * @addtogroup s07_p02
+  * @{
+  */
 #include <iostream>
 #include <vector>
 
@@ -64,3 +80,4 @@ int main() {
     cout << endl;
     return 0;
 }
+/** @} */

@@ -1,3 +1,9 @@
+/**
+ * @file main.cpp
+ * @details The goal of this programming exercise is to calculate different bills for
+ * splitting the bill among a group of guests
+ */
+
 #include <iostream>
 #include <cmath>
 #include <string>

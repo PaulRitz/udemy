@@ -1,3 +1,20 @@
+/**
+ * @file main.cpp
+ * @brief Programming Exercise 02: learn how to work with vectors
+ */
+
+/**
+ * @addtogroup section07
+ * @{
+ * @defgroup s07_p04 ProgrammingExercise02
+ * @brief Programming Exercise 02: learn how to work with vectors
+ * @}
+ */
+
+/**
+ * @addtogroup s07_p04
+ * @{
+ */
 #include <iostream>
 #include <vector>
 
@@ -16,3 +33,4 @@ int main() {
 
     return 0;
 }
+/** @} */

@@ -1,3 +1,28 @@
+/**
+ * @file main.cpp
+ * @brief a little program to calculate the cost of cleaning rooms
+ */
+
+/**
+ * @defgroup section06 Section06: Variables
+ * @{
+ * @brief Get to know c++ variables
+ * @details showcase of c++ variables and data types
+ * @}
+ */
+
+/**
+ * @addtogroup section06
+ * @{
+ * @defgroup s06_p01 Constants
+ * @brief a little program to calculate the cost of cleaning rooms
+ * @}
+ */
+
+ /**
+  * @addtogroup s06_p01
+  * @{
+  */
 #include <iostream>
 
 using namespace std;
@@ -29,3 +54,4 @@ int main() {
     cout << endl;
     return 0;
 }
+/** @] */

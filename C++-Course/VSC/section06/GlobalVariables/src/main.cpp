@@ -1,3 +1,20 @@
+/**
+ * @file main.cpp
+ * @brief showcase of global variables 
+ */
+
+/**
+ * @addtogroup section06
+ * @{
+ * @defgroup s06_p02 GlobalVariables
+ * @brief showcase of global variables 
+ * @}
+ */
+
+/** 
+ * @addtogroup s06_p02
+ * @{
+ */
 #include <iostream>
 
 using namespace std;
@@ -21,3 +38,4 @@ int main() {
 
     return 0;
 }
+/** @} */

@@ -1,4 +1,6 @@
 /**
+ * @file main.cpp
+ * @details Code Challenge:
  * Frank's Carpet Cleaning Service
  * 
  * Charges:
@@ -11,6 +13,25 @@
  * cleaned  and provide an estimate. 
  * 
  */
+
+/**
+ * @addtogroup section06
+ * @{
+ * @defgroup s06_p07 CodeChallenge
+ * @details Code Challenge:
+ * Frank's Carpet Cleaning Service
+ * 
+ * Charges:
+ *  $25 per small room
+ *  $35 per large room
+ * Sales tax rate is 6% -> 0.06
+ * Estimates are valid for 30 days
+ * 
+ * Prompt the user for the number of small and large rooms they would like
+ * cleaned  and provide an estimate. 
+ * @}
+ */
+
 
 
 #include <iostream>
