@@ -5,7 +5,7 @@
 /**
  * @addtogroup section13
  * @{
- * @defgroup s13_pe01
+ * @defgroup s13_pe01 ProgramminExercise01
  * @brief programming exercise 01: practice using c++ classes and objects
  * @}
  */

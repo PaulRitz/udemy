@@ -9,6 +9,7 @@ INCLUDE_DIR = include
 SOURCE_DIR = src
 BUILD_DIR = build
 
+
 ifeq ($(DEBUG), 1)
     CXXFLAGS += -g -O0
     EXECUTABLE_NAME = mainDebug
@@ -36,7 +37,9 @@ CPPFLAGS = -I $(INCLUDE_DIR)
 COMPILER_CALL = $(CXX) $(CXXFLAGS) $(CPPFLAGS)
 
 CXX_SOURCES = $(wildcard $(SOURCE_DIR)/*.cpp)
+CXX_INCLUDE_SOURCES = $(wildcard $(INCLUDE_DIR)/*.cpp)
 CXX_OBJECTS = $(patsubst $(SOURCE_DIR)/%.cpp, $(BUILD_DIR)/%.o, $(CXX_SOURCES))
+CXX_OBJECTS += $(patsubst $(INCLUDE_DIR)/%.cpp, $(BUILD_DIR)/%.o, $(CXX_INCLUDE_SOURCES))
 
 ###########
 # Targets #
@@ -49,6 +52,9 @@ build: prepare $(CXX_OBJECTS)
 	$(COMPILER_CALL) $(CXX_OBJECTS) -o $(BUILD_DIR)/$(EXECUTABLE_NAME)
 
 $(BUILD_DIR)/%.o: $(SOURCE_DIR)/%.cpp
+	$(COMPILER_CALL) -c $< -o $@
+
+$(BUILD_DIR)/%.o: $(INCLUDE_DIR)/%.cpp
 	$(COMPILER_CALL) -c $< -o $@
 
 prepare:

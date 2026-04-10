@@ -26,11 +26,11 @@
 
 using namespace std;
 
-class Player {
+class Player0 {
 public:
     // attributes
 
-    string name {"Player"};
+    string name {"Player0"};
     int health {100};
     int xp {3};
 
@@ -53,10 +53,10 @@ public:
 
 int main() {
 
-    Player Frank;
-    Player Hero;
+    Player0 Frank;
+    Player0 Hero;
 
-    Player* enemy = new Player;
+    Player0* enemy = new Player0;
 
     Account Frank_acc;
     Account Jim_acc;

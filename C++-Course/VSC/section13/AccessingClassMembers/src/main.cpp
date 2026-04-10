@@ -22,11 +22,11 @@
 
 using namespace std;
 
-class Player {
+class Player1 {
 public:
     // attributes
 
-    string name {"Player"};
+    string name {"Player1"};
     int health {100};
     int xp {3};
 
@@ -61,20 +61,20 @@ int main() {
 
     cout << "==========================================" << endl;
     // Example 1
-    Player Frank;
+    Player1 Frank;
     Frank.name = "Frank";
     Frank.health = 100;
     Frank.xp = 12;
     
     Frank.talk("Hello there!");
     
-    Player Kevin;
+    Player1 Kevin;
     Kevin.name = "Kevin Rothmann";
     Kevin.health = 700;
     Kevin.xp = -5;
     Kevin.talk("HAAAAAAAAAALLLLLLO!!!");
     
-    Player* enemy = new Player;
+    Player1* enemy = new Player1;
     (*enemy).name = "enemy";
     enemy->name ="Enemy";
     (*enemy).health = 100;

@@ -22,10 +22,10 @@
 
 using namespace std;
 
-class Player {
+class Player2 {
 private:
     // attributes
-    string name {"Player"};
+    string name {"Player2"};
     int health {100};
     int xp {3};
 
@@ -58,7 +58,7 @@ public:
 };
 
 int main() {
-    Player frank;
+    Player2 frank;
     // frank.name = "Frank";               // Gives out compiler errors when
     // cout << frank.health << endl;       // trying to access or write any private data of a class
 

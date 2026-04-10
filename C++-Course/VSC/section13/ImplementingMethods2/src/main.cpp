@@ -3,7 +3,7 @@
  * @brief showcase on how to implement methods and classes
  */
 /**
- * @addtogroup
+ * @addtogroup section13
  * @{
  * @defgroup s13_p05 ImplementingMethods2
  * @brief showcase on how to implement methods and classes

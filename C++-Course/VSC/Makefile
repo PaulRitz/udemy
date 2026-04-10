@@ -15,6 +15,8 @@ nP:
 	@cp templates/main.cpp.template section$(S)/$(PN)/src/main.cpp
 	@cp templates/InSourceCMake.template section$(S)/$(PN)/src/CMakeLists.txt
 	@cp templates/InProjectCMake.template section$(S)/$(PN)/CMakeLists.txt
+	@cp templates/header.h.template section$(S)/$(PN)/include/header.h
+	@cp templates/header.cpp.template section$(S)/$(PN)/include/header.cpp
 	@echo "Adding a new subdirectory to section$(S) level CMakeLists file."
 	@echo "add_subdirectory($(PN))" >> section$(S)/CMakeLists.txt
 	@cp templates/InIncludeCMake.template section$(S)/$(PN)/include/CMakeLists.txt

@@ -3,7 +3,7 @@
  * @brief showcase on how to implement a method
  */
 /**
- * @addtogroup
+ * @addtogroup section13
  * @{
  * @defgroup s13_p04 ImplementingMethods1
  * @brief showcase on how to implement a method
