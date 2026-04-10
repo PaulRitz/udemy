@@ -1,3 +1,20 @@
+/**
+ * @file main.cpp
+ * @brief showcase of returning a pointer from a function
+ */
+
+/**
+ * @addtogroup section12
+ * @{
+ * @defgroup s12_p10 ReturnPointer
+ * @brief showcase of returning a pointer from a function
+ * @}
+ */
+
+/**
+ * @addtogroup s12_p10
+ * @{
+ */
 #include <iostream>
 #include <iomanip>
 #include <cmath>
@@ -45,3 +62,4 @@ void display(const int* const array, size_t size){
     }
     cout << endl;
 }
+/** @} */

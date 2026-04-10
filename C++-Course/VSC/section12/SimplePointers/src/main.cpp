@@ -1,3 +1,20 @@
+/**
+ * @file main.cpp
+ * @brief showcase of the most basic functions of pointers
+ */
+
+/**
+ * @addtogroup section12
+ * @{
+ * @defgroup s12_p11 SimplePointers
+ * @brief showcase of the most basic functions of pointers
+ * @}
+ */
+
+/** 
+ * @addtogroup s12_p11
+ * @{
+ */
 #include <iostream>
 #include <cmath>
 #include <string>
@@ -60,3 +77,4 @@ int main() {
     cout << endl;
     return 0;
 }
+/** @} */

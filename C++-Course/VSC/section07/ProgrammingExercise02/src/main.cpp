@@ -6,13 +6,13 @@
 /**
  * @addtogroup section07
  * @{
- * @defgroup s07_p04 ProgrammingExercise02
+ * @defgroup s07_pe02 ProgrammingExercise02
  * @brief Programming Exercise 02: learn how to work with vectors
  * @}
  */
 
 /**
- * @addtogroup s07_p04
+ * @addtogroup s07_pe02
  * @{
  */
 #include <iostream>

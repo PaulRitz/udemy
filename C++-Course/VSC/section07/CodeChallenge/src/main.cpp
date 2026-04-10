@@ -5,13 +5,13 @@
 
 /** @addtogroup section07
  * @{
- * @defgroup s07_p02 CodeChallenge
+ * @defgroup s07_cc CodeChallenge
  * @brief CodeChallenge Goal: learn to work with vectors
  * @}
  */
 
  /**
-  * @addtogroup s07_p02
+  * @addtogroup s07_cc
   * @{
   */
 #include <iostream>

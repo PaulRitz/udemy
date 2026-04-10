@@ -1,3 +1,20 @@
+/**
+ * @file main.cpp
+ * @brief showcase of the range based for loop in c++
+ */
+
+/**
+ * @addtogroup section09
+ * @{
+ * @defgroup s09_p09 RangeBasedForLoop
+ * @brief showcase of the range based for loop in c++
+ * @}
+ */
+
+/**
+ * @addtogroup s09_p09
+ * @{
+ */
 #include <iostream>
 #include <vector>
 #include <iomanip>
@@ -82,3 +99,4 @@ int main() {
     cout << endl;
     return 0;
 }
+/** @} */

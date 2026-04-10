@@ -1,3 +1,25 @@
+/**
+ * @file main.cpp
+ * @brief showcase of using arrays with pointers
+ */
+
+/**
+ * @defgroup section12 Section 12: Pointers and References
+ * @brief in this section pointers and references are presented as well as their usage
+ */
+
+/**
+ * @addtogroup section12
+ * @{
+ * @defgroup s12_p01 ArraysAndPointers
+ * @brief showcase of using arrays with pointers
+ * @}
+ */
+
+/**
+ * @addtogroup s12_p01
+ * @{
+ */
 #include <iostream>
 #include <cmath>
 #include <string>
@@ -35,3 +57,4 @@ int main() {
     cout << endl;
     return 0;
 }
+/** @} */

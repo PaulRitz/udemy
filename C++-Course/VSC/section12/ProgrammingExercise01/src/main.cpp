@@ -1,3 +1,20 @@
+/**
+ * @file main.cpp
+ * @brief programming exercise 01: practice using pointers
+ */
+
+/**
+ * @addtogroup section12
+ * @{
+ * @defgroup s12_pe01 ProgrammingExercise01
+ * @brief programming exercise 01: practice using pointers
+ * @}
+ */
+
+/**
+ * @addtogroup s12_pe01
+ * @{
+ */
 #include <iostream>
 #include <iomanip>
 #include <cmath>
@@ -31,3 +48,4 @@ void swapPointers(int* ptr1, int* ptr2){
     *ptr1 = *ptr2;
     *ptr2 = tmp;
 }
+/** @} */

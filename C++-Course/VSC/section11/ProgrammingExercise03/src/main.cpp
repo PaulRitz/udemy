@@ -1,3 +1,20 @@
+/**
+ * @file main.cpp
+ * @brief programming exercise 03: practice using function in c++
+ */
+
+/**
+ * @addtogroup section11
+ * @{
+ * @defgroup s11_pe03 ProgrammingExercise03
+ * @brief programming exercise 03: practice using function in c++
+ * @}
+ */
+
+/**
+ * @addtogroup s11_pe03
+ * @{
+ */
 #include <iostream>
 #include <cmath>
 #include <string>
@@ -20,3 +37,4 @@ void print_grocery_list(int mangos, int apples, int oranges){
     cout << "Apples: " << apples << endl;
     cout << "Oranges: " << oranges <<endl;
 }
+/** @} */

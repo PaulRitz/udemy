@@ -1,3 +1,20 @@
+/**
+ * @file main.cpp
+ * @brief programming exercise 02: practice using pointers
+ */
+
+/**
+ * @addtogroup section12
+ * @{
+ * @defgroup s12_pe02 ProgrammingExercise02
+ * @brief programming exercise 02: practice using pointers
+ * @}
+ */
+
+/**
+ * @addtogroup s12_pe02
+ * @{
+ */
 #include <iostream>
 #include <iomanip>
 #include <cmath>
@@ -99,3 +116,4 @@ string reverse_string(const string &str){
     }
     return result;
 }
+/** @} */

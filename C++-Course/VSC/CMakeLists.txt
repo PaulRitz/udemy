@@ -8,6 +8,13 @@ set(CMAKE_CXX_STANDARD              17)
 set(CMAKE_CXX_STANDARD_REQUIRED     ON)
 set(CMAKE_CXX_EXTENSIONS            OFF)
 
+# Enable Debug Symbols for Debugging
+set(CMAKE_CXX_FLAGS_DEBUG "-g -O0 -Wall")
+set(CMAKE_CXX_FLAGS "-g")
+if(NOT CMAKE_BUILD_TYPE)
+    set(CMAKE_BUILD_TYPE Debug)
+endif()
+
 set(EXECUTABLE_NAME executable)
 set(LIBRARY_NAME library)
 
@@ -18,6 +25,7 @@ set(CMAKE_MODULE_PATH "${PROJECT_SOURCE_DIR}/cmake/")
 include(Docs)
 
 # SUBDIRECTORIES
+add_subdirectory(section13)
 add_subdirectory(section12)
 add_subdirectory(section11)
 add_subdirectory(section10)
@@ -99,6 +107,7 @@ endforeach()
 # 2. Targets für JEDE SEKTION
 foreach(
         # SECTION-INSTALL-TARGETS 
+ 	section13
  	section12
  	section12
         section11

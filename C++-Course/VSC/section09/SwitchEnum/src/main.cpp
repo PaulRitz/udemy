@@ -1,3 +1,20 @@
+/**
+ * @file main.cpp
+ * @brief showcase of using the switch statement with enumerations in c++
+ */
+
+/**
+ * @addtogroup section09
+ * @{
+ * @defgroup s09_p12 SwitchEnum
+ * @brief showcase of using the switch statement with enumerations in c++
+ * @}
+ */
+
+/**
+ * @addtogroup s09_p12
+ * @{
+ */
 #include <iostream>
 
 using namespace std;
@@ -39,3 +56,4 @@ int main() {
     cout << endl;
     return 0;
 }
+/** @} */

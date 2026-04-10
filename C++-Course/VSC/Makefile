@@ -1,9 +1,11 @@
 nSection: updateCMake
+	@if [ -z "$(S)" ]; then echo "Fehler: S ist leer!"; exit 1; fi
 	@mkdir -p section$(S)
 	@cp templates/InSectionCMake.template section$(S)/CMakeLists.txt
 
 nP:
 	@if [ -z "$(PN)" ]; then echo "Fehler: PN ist leer!"; exit 1; fi
+	@if [ -z "$(S)" ]; then echo "Fehler: S ist leer!"; exit 1; fi
 	@mkdir -p section$(S)/$(PN)
 	@cp templates/Makefile.template section$(S)/$(PN)/Makefile
 	@cd section$(S)/$(PN) && \
@@ -25,12 +27,15 @@ nPT:
 	@echo "add_subdirectory($(PN))" >> section$(S)/CMakeLists.txt
 
 rmProject:
+	@if [ -z "$(S)" ]; then echo "Fehler: S ist leer!"; exit 1; fi
+	@if [ -z "$(PN)" ]; then echo "Fehler: PN ist leer!"; exit 1; fi
 	@rm -rf section$(S)/$(PN)
 	@sed -i '/add_subdirectory($(PN))/d' section$(S)/CMakeLists.txt
 	@echo "Subdirectory in section$(S) level CMakeLists.txt entfernt"
 	@echo "Ordnerstruktur für section$(S)/$(PN) gelöscht"
 
 rmSection:
+	@if [ -z "$(S)" ]; then echo "Fehler: S ist leer!"; exit 1; fi
 	@rm -rf section$(S)
 	@sed -i '/add_subdirectory(section$(S))/d' CMakeLists.txt
 	@sed -i '/section$(S)/d' CMakeLists.txt

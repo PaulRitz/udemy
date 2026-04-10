@@ -1,3 +1,20 @@
+/**
+ * @file main.cpp
+ * @brief showcase of the do while loop in c++ and its usage
+ */
+
+/**
+ * @addtogroup section09
+ * @{
+ * @defgroup s09_p02 DoWhile
+ * @brief showcase of the do while loop in c++ and its usage
+ * @}
+ */
+
+/**
+ * @addtogroup s09_p02
+ * @{
+ */
 #include <iostream>
 #include <vector>
 
@@ -47,3 +64,4 @@ int main() {
     cout << endl;
     return 0;
 }
+/** @} */

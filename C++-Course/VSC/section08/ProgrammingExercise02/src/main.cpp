@@ -1,3 +1,7 @@
+/**
+ * @file main.cpp
+ * @brief programming exercise 02: practice using c++ operations
+ */
 #include <iostream>
 
 using namespace std;

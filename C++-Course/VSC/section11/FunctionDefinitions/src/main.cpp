@@ -1,3 +1,21 @@
+/**
+ * @file main.cpp
+ * @brief showcase of function definitions
+ */
+
+/**
+ * @addtogroup section11
+ * @{
+ * @defgroup s11_p05 FunctionDefinitions
+ * @brief showcase of function definitions
+ * @}
+ */
+
+/**
+ * @addtogroup s11_p05
+ * @{
+ */
+
 #include <iostream>
 #include <cmath>
 #include <string>
@@ -47,3 +65,4 @@ void volume_cylinder(){
 double calc_volume_cylinder(double radius, double height){
     return (calc_area_circle(radius)*height);
 }
+/** @} */

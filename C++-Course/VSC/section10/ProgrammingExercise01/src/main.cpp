@@ -1,3 +1,20 @@
+/**
+ * @file main.cpp
+ * @brief programming exercise 01: practice using strings in c++
+ */
+
+/**
+ * @addtogroup section10
+ * @{
+ * @defgroup s10_pe01 ProgrammingExercise01
+ * @brief programming exercise 01: practice using strings in c++
+ * @}
+ */
+
+/**
+ * @addtogroup s10_pe01
+ * @{
+ */
 #include <iostream>
 #include <cstring>
 #include <cctype>
@@ -29,3 +46,4 @@ int main() {
     cout << endl;
     return 0;
 }
+/** @} */

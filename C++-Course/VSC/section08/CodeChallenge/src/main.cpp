@@ -1,11 +1,32 @@
 #include <iostream>
 /**
- * Change calculator
+ * @file main.cpp
+ * @brief Change calculator (for american currency)
+ * @details Change calculator
  * 1 dollar => 100 cents
  * 1 quarter => 25 cents
  * 1 dime => 10 cents
  * 1 nickel => 5 cents
  * 1 penny => 1 cent
+ */
+
+/**
+ * @addtogroup section08
+ * @{
+ * @defgroup s08_cc CodeChallenge
+ * @brief Change calculator (for american currency)
+ * @details Change calculator
+ * 1 dollar => 100 cents
+ * 1 quarter => 25 cents
+ * 1 dime => 10 cents
+ * 1 nickel => 5 cents
+ * 1 penny => 1 cent
+ * @}
+ */
+
+/**
+ * @addtogroup s08_cc
+ * @{
  */
 using namespace std;
 
@@ -67,3 +88,4 @@ int main() {
 
     return 0;
 }
+/** @} */

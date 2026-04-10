@@ -1,3 +1,21 @@
+/**
+ * @file main.cpp
+ * @brief a program that prints a histogram with help of for loops
+ */
+
+/**
+ * @addtogroup section09
+ * @{
+ * @defgroup s09_p05 Histogram
+ * @brief a program that prints a histogram with help of for loops
+ * @}
+ */
+
+/**
+ * @addtogroup s09_p05
+ * @{
+ */
+
 #include <iostream>
 #include <vector>
 
@@ -40,3 +58,4 @@ int main() {
     cout << endl;
     return 0;
 }
+/** @} */

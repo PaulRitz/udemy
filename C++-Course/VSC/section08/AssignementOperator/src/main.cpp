@@ -1,3 +1,20 @@
+/**
+ * @file main.cpp
+ * @brief Showcase of the assignement operator in c++ and its usage
+ */
+
+/**
+ * @addtogroup section08
+ * @{
+ * @defgroup s08_p01 AssignementOperator
+ * @brief Showcase of the assignement operator in c++ and its usage
+ * @}
+ */
+
+/**
+ * @addtogroup s08_p01
+ * @{
+ */
 #include <iostream>
 
 using namespace std;
@@ -15,3 +32,4 @@ int main() {
 
     return 0;
 }
+/** @} */

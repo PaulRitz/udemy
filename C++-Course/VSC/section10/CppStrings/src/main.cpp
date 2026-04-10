@@ -1,3 +1,20 @@
+/**
+ * @file main.cpp
+ * @brief showcase of c++ strings
+ */
+
+/**
+ * @addtogroup section10
+ * @{
+ * @defgroup s10_p01 CppStrings
+ * @brief showcase of c++ strings
+ * @}
+ */
+
+/**
+ * @addtogroup s10_p01
+ * @{
+ */
 #include <iostream>
 #include <string>
 #include <iomanip>
@@ -164,3 +181,4 @@ int main() {
     cout << endl;
     return 0;
 }
+/** @} */

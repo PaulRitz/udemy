@@ -1,3 +1,20 @@
+/**
+ * @file main.cpp
+ * @brief programming exercise 07: practice using functions
+ */
+
+/**
+ * @addtogroup section11
+ * @{
+ * @defgroup s11_pe07
+ * @brief programming exercise 07: practice using functions
+ * @}
+ */
+
+/**
+ * @addtogroup s11_pe07
+ * @{
+ */
 #include <iostream>
 #include <cmath>
 #include <string>
@@ -23,3 +40,4 @@ int sum_of_digits(int n){
     }
     return (n%10 + sum_of_digits(n/10));
 }
+/** @} */

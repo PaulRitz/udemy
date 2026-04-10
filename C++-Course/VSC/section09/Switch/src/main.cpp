@@ -1,3 +1,20 @@
+/**
+ * @file main.cpp
+ * @brief showcase of the switch case statement in c++
+ */
+
+/**
+ * @addtogroup section09
+ * @{
+ * @defgroup s09_p11 Switch
+ * @brief showcase of the switch case statement in c++
+ * @}
+ */
+
+/**
+ * @addtogroup s09_p11
+ * @{
+ */
 #include <iostream>
 
 using namespace std;
@@ -52,3 +69,4 @@ int main() {
     cout << endl;
     return 0;
 }
+/** @} */

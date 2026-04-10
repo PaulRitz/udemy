@@ -4,15 +4,15 @@
  */
 
 /**
- * @addtogroup section06
+ * @addtogroup section05
  * @{
- * @defgroup s06_p06 SizeofOperator
+ * @defgroup s06_p05 SizeofOperator
  * @brief showcase of the information there is to get about different data types
  * @}
  */
 
  /**
-  * @addtogroup s06_p06
+  * @addtogroup s06_p05
   * @{
   */
 #include <iostream>

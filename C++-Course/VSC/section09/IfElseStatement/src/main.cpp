@@ -1,3 +1,20 @@
+/**
+ * @file main.cpp
+ * @brief showcase of the if else statement in c++ and its usage
+ */
+
+/**
+ * @addtogroup section09
+ * @{
+ * @defgroup s09_p06 IfElseStatement
+ * @brief showcase of the if else statement in c++ and its usage
+ * @}
+ */
+
+/**
+ * @addtogroup s09_p06
+ * @{
+ */
 #include <iostream>
 
 using namespace std;
@@ -26,3 +43,4 @@ int main() {
     cout << endl;
     return 0;
 }
+/** @} */

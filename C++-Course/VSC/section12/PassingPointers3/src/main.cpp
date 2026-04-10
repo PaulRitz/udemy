@@ -1,3 +1,20 @@
+/** 
+ * @file main.cpp
+ * @brief showcase of passing pointers v3
+ */
+
+/**
+ * @addtogroup section12
+ * @{
+ * @defgroup s12_p07 PassingPointers3
+ * @brief showcase of passing pointers v3
+ * @}
+ */
+
+/**
+ * @addtogroup s12_p07
+ * @{
+ */
 #include <iostream>
 #include <iomanip>
 #include <cmath>
@@ -35,3 +52,4 @@ void display(int* array, int sentinel){
         cout << *array++ << endl;
     }
 }
+/** @} */

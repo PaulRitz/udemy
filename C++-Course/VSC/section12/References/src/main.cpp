@@ -1,3 +1,20 @@
+/**
+ * @file main.cpp
+ * @brief showcase of references in c++
+ */
+
+/**
+ * @addtogroup section12
+ * @{
+ * @defgroup s12_p09 References
+ * @brief showcase of references in c++
+ * @}
+ */
+
+/**
+ * @addtogroup s12_p09
+ * @{
+ */
 #include <iostream>
 #include <iomanip>
 #include <cmath>
@@ -45,3 +62,4 @@ int main() {
     cout << endl;
     return 0;
 }
+/** @} */

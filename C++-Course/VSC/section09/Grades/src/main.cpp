@@ -1,3 +1,20 @@
+/**
+ * @file main.cpp
+ * @brief a program that asks for your score in an exam and returns the letter grade
+ */
+
+/**
+ * @addtogroup section09
+ * @{
+ * @defgroup s09_p04 Grades
+ * @brief a program that asks for your score in an exam and returns the letter grade
+ * @}
+ */
+
+/**
+ * @addtogroup s09_p04
+ * @{
+ */
 #include <iostream>
 
 using namespace std;
@@ -42,3 +59,4 @@ int main() {
     cout << endl;
     return 0;
 }
+/** @} */

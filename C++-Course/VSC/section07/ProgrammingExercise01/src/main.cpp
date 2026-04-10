@@ -6,13 +6,13 @@
 /**
  * @addtogroup section07
  * @{
- * @defgroup s07_p03 ProgrammingExercise01
+ * @defgroup s07_pe01 ProgrammingExercise01
  * @brief Programming Exercise 01: learn hwo to work with arrays
  * @}
  */
 
 /**
- * @addtogroup s07_p03
+ * @addtogroup s07_pe01
  * @{
  */
 #include <iostream>

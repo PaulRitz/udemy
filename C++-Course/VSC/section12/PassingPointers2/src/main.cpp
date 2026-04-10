@@ -1,3 +1,21 @@
+/**
+ * @file main.cpp
+ * @brief showcase of passing pointers v2
+ */
+
+/**
+ * @addtogroup section12
+ * @{
+ * @defgroup s12_p06 PassingPointers2
+ * @brief showcase of passing pointers v2
+ * @}
+ */
+
+/**
+ * @addtogroup s12_p06
+ * @{
+ */
+
 #include <iostream>
 #include <iomanip>
 #include <cmath>
@@ -28,3 +46,4 @@ void swap(int* a, int* b){
     *a = *b;
     *b = tmp;
 }
+/** @} */

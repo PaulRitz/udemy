@@ -1,3 +1,20 @@
+/**
+ * @file main.cpp
+ * @brief showcase of mixed expressions in c++
+ */
+
+/**
+ * @addtogroup section08
+ * @{
+ * @defgroup s08_p07 MixedExpressions
+ * @brief showcase of mixed expressions in c++
+ * @}
+ */
+
+/**
+ * @addtogroup s08_p07
+ * @{
+ */
 #include <iostream>
 
 using namespace std;
@@ -24,3 +41,4 @@ int main() {
     cout << endl;
     return 0;
 }
+/** @} */

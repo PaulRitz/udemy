@@ -1,3 +1,20 @@
+/**
+ * @file main.cpp
+ * @brief erogramming exercise 01: practice using c++ operators
+ */
+
+/**
+ * @addtogroup section08
+ * @{
+ * @defgroup s08_pe01 ProgrammingExercise01
+ * @brief programming exercise 01: practice using c++ operators
+ * @}
+ */
+
+/**
+ * @addtogroup s08_pe01
+ * @{
+ */
 #include <iostream>
 
 using namespace std;
@@ -36,3 +53,4 @@ int main() {
     cout << endl;
     return 0;
 }
+/** @} */

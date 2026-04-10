@@ -1,3 +1,20 @@
+/**
+ * @file main.cpp
+ * @brief showcase of the debugger (in this custom environment not working)
+ */
+
+/**
+ * @addtogroup section12
+ * @{
+ * @defgroup s12_p02 Debugger
+ * @brief showcase of the debugger (in this custom environment not working)
+ * @}
+ */
+
+/**
+ * @addtogroup s12_p02
+ * @{
+ */
 #include <iostream>
 #include <iomanip>
 #include <cmath>
@@ -34,3 +51,4 @@ void swap(int* a, int* b){
     *b = *a;
     *a = tmp;
 }
+/** @} */

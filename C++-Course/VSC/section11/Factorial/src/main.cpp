@@ -1,3 +1,20 @@
+/**
+ * @file main.cpp
+ * @brief shows how the factorial number is calculated recursively
+ */
+
+/**
+ * @addtogroup section11
+ * @{
+ * @defgroup s11_p03 Factorial
+ * @brief shows how the factorial number is calculated recursively
+ * @}
+ */
+
+/**
+ * @addtogroup s11_p03
+ * @{
+ */
 #include <iostream>
 #include <cmath>
 #include <string>
@@ -17,13 +34,11 @@ int main() {
     return 0;
 }
 
-/**
- * @file main.cpp
- * @brief shows how the factorial number is calculated recursively
- */
+
 unsigned long long factorial(unsigned long long n){
     if(n==0){
         return 1;
     }
     return n*factorial(n-1);
 }
+/** @} */

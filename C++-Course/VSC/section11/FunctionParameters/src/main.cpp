@@ -1,3 +1,21 @@
+/**
+ * @file main.cpp
+ * @brief showcase of function parameters
+ */
+
+/**
+ * @addtogroup section11
+ * @{
+ * @defgroup s11_p07 FunctionParameters
+ * @brief showcase of function parameters
+ * @}
+ */
+
+/**
+ * @addtogroup s11_p07
+ * @{
+ */
+
 #include <iostream>
 #include <cmath>
 #include <string>
@@ -56,4 +74,4 @@ void print_vector(vector<string> v){
     }
     cout << endl;
 }
-
+/** @} */

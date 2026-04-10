@@ -1,3 +1,26 @@
+/**
+ * @file main.cpp
+ * @brief showcase of using functions with arrays
+ */
+
+/**
+ * @defgroup section11 Section 11: Functions
+ * @brief in this sections c++ functions and their usage are presented
+ */
+
+/**
+ * @addtogroup section11
+ * @{
+ * @defgroup s11_p01 ArraysAndFunctions
+ * @brief showcase of using functions with arrays
+ * @}
+ */
+
+/**
+ * @addtogroup s11_p01
+ * @{
+ */
+
 #include <iostream>
 #include <cmath>
 #include <string>
@@ -31,3 +54,4 @@ void set_array(int arr[], size_t size, int value){
         arr[i] = value;
     }
 }
+/** @} */

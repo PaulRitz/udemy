@@ -1,3 +1,20 @@
+/**
+ * @file main.cpp
+ * @brief showcase of the if statement in c++ and its usage
+ */
+
+/**
+ * @addtogroup section09
+ * @{
+ * @defgroup s09_p07 IfStatement
+ * @brief showcase of the if statement in c++ and its usage
+ * @}
+ */
+
+/**
+ * @addtogroup s09_p07
+ * @{
+ */
 #include <iostream>
 
 using namespace std;
@@ -44,3 +61,4 @@ int main() {
     cout << endl;
     return 0;
 }
+/** @} */

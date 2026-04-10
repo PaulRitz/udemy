@@ -1,3 +1,20 @@
+/**
+ * @file main.cpp
+ * @brief showcase of random number generation
+ */
+
+/**
+ * @addtogroup section11
+ * @{
+ * @defgroup s11_p11 Random
+ * @brief showcase of random number generation
+ * @}
+ */
+
+/**
+ * @addtogroup s11_p11
+ * @{
+ */
 #include <iostream>
 #include <cstdlib>
 #include <ctime>
@@ -22,3 +39,4 @@ int main() {
     cout << endl;
     return 0;
 }
+/** @} */

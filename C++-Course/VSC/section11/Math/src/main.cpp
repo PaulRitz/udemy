@@ -1,3 +1,21 @@
+/**
+ * @file main.cpp
+ * @brief shows how to use math functions (from <cmath>)
+ */
+
+/**
+ * @addtogroup section11
+ * @{
+ * @defgroup s11_p09 Math
+ * @brief shows how to use math functions (from <cmath>)
+ * @}
+ */
+
+/**
+ * @addtogroup s11_p09
+ * @{
+ */
+
 #include <iostream>
 #include <cmath>
 
@@ -36,3 +54,4 @@ int main() {
     cout << endl;
     return 0;
 }
+/** @} */

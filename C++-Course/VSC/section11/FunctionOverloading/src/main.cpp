@@ -1,3 +1,26 @@
+/**
+ * @file main.cpp
+ * @brief showcase of function overloading
+ * @details function overloading means writing multiple different function definitions
+ * for one function, then while coding the same function can be used e.g. for multiple data types
+ * because the function has definitions for every data type
+ */
+
+/**
+ * @addtogroup section11
+ * @{
+ * @defgroup s11_p06
+ * @brief showcase of function overloading
+ * @details function overloading means writing multiple different function definitions
+ * for one function, then while coding the same function can be used e.g. for multiple data types
+ * because the function has definitions for every data type
+ * @}
+ */
+
+/**
+ * @addtogroup s11_p06
+ * @{
+ */
 #include <iostream>
 #include <cmath>
 #include <string>
@@ -54,3 +77,4 @@ void print(vector<string> strvec){
         cout << str << endl;
     }
 }
+/** @} */

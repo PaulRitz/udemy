@@ -6,13 +6,13 @@
 /**
  * @addtogroup section06
  * @{
- * @defgroup s06_p05 ProgrammingExercise01
+ * @defgroup s06_pe01 ProgrammingExercise01
  * @brief program to file an employee profile
  * @}
  */
 
  /**
-  * @addtogroup s06_p05
+  * @addtogroup s06_pe01
   * @{
   */
 #include <iostream>

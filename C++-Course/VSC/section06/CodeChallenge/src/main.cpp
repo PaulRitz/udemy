@@ -17,7 +17,7 @@
 /**
  * @addtogroup section06
  * @{
- * @defgroup s06_p07 CodeChallenge
+ * @defgroup s06_cc CodeChallenge
  * @details Code Challenge:
  * Frank's Carpet Cleaning Service
  * 

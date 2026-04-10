@@ -1,3 +1,20 @@
+/**
+ * @file main.cpp
+ * @brief showcase of the equality operator(s) in c++ and their usage
+ */
+
+/**
+ * @addtogroup section08
+ * @{
+ * @defgroup s08_p03 EqualityOperators
+ * @brief showcase of the equality operator(s) in c++ and their usage
+ * @}
+ */
+
+/**
+ * @addtogroup s08_p03
+ * @{
+ */
 #include <iostream>
 
 using namespace std;
@@ -60,3 +77,4 @@ int main() {
     cout << "===============================" << endl << endl;
     return 0;
 }
+/** @} */

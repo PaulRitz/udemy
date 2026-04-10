@@ -1,3 +1,21 @@
+/**
+ * @file main.cpp
+ * @brief showcase of the for loop in c++ and its usage
+ */
+
+/**
+ * @addtogroup section09
+ * @{
+ * @defgroup s09_p03 ForLoop
+ * @brief showcase of the for loop in c++ and its usage
+ * @}
+ */
+
+/**
+ * @addtogroup s09_p03
+ * @{
+ */
+
 #include <iostream>
 #include <vector>
 
@@ -64,3 +82,4 @@ int main() {
     cout << endl;
     return 0;
 }
+/** @} */

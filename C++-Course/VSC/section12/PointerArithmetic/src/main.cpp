@@ -1,3 +1,20 @@
+/**
+ * @file main.cpp
+ * @brief showcase of pointer arithmetic
+ */
+
+/** 
+ * @addtogroup section12
+ * @{
+ * @defgroup s12_p08 PointerArithmetic
+ * @brief showcase of pointer arithmetic
+ * @}
+ */
+
+/**
+ * @addtogroup s12_p08
+ * @{
+ */
 #include <iostream>
 #include <iomanip>
 #include <cmath>
@@ -70,3 +87,4 @@ int main() {
     cout << endl;
     return 0;
 }
+/** @} */

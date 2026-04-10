@@ -1,3 +1,20 @@
+/**
+ * @file main.cpp
+ * @brief showcase of c style strings in c++
+ */
+
+/**
+ * @addtogroup section10
+ * @{
+ * @defgroup s10_p02 CStyleStrings
+ * @brief showcase of c style strings in c++
+ * @}
+ */
+
+/**
+ * @addtogroup s10_p02
+ * @{
+ */
 #include <iostream>
 #include <cstring>
 #include <cctype>
@@ -84,3 +101,4 @@ int main() {
     cout << endl;
     return 0;
 }
+/** @} */

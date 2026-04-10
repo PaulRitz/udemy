@@ -1,3 +1,20 @@
+/**
+ * @file main.cpp
+ * @brief shows how the fibonacci numbers are calculatet recursively
+ */
+
+/**
+ * @addtogroup section11
+ * @{
+ * @defgroup s11_p04 Fibonacci
+ * @brief shows how the fibonacci numbers are calculatet recursively
+ * @}
+ */
+
+/**
+ * @addtogroup s11_p04
+ * @{
+ */
 #include <iostream>
 #include <cmath>
 #include <string>
@@ -23,3 +40,4 @@ unsigned long long fibonacci(unsigned long long n){
     }
     return fibonacci(n-1) + fibonacci(n-2);
 }
+/** @} */

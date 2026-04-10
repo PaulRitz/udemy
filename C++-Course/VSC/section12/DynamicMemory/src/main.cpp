@@ -1,3 +1,20 @@
+/**
+ * @file main.cpp
+ * @brief showcase of dynamic memory allocation
+ */
+
+/**
+ * @addtogroup section12
+ * @{
+ * @defgroup s12_p04 DynamicMemory
+ * @brief showcase of dynamic memory allocation
+ * @}
+ */
+
+/**
+ * @addtogroup s12_p04
+ * @{
+ */
 #include <iostream>
 #include <cmath>
 #include <string>
@@ -39,3 +56,4 @@ int main() {
     cout << endl;
     return 0;
 }
+/** @} */

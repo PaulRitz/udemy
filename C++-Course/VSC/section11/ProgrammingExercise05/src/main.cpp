@@ -1,3 +1,20 @@
+/**
+ * @file main.cpp
+ * @brief programming exercise 05: practice using functions
+ */
+
+/**
+ * @addtogroup section11
+ * @{
+ * @defgroup s11_pe05 ProgrammingExercise05
+ * @brief programming exercise 05: practice using functions
+ * @}
+ */
+
+/**
+ * @addtogroup s11_pe05
+ * @{
+ */
 #include <iostream>
 #include <cmath>
 #include <string>
@@ -35,3 +52,4 @@ void clear_guest_list(string arr[], size_t size){
         arr[i] = " ";
     }
 }
+/** @} */

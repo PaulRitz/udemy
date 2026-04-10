@@ -1,3 +1,21 @@
+/**
+ * @file main.cpp
+ * @brief showcase of the increment and decrement operators in c++ and their usage
+ */
+
+/**
+ * @addtogroup section08
+ * @{
+ * @defgroup s08_p05 IncrementDecrementOperators
+ * @brief showcase of the increment and decrement operators in c++ and their usage
+ * @}
+ */
+
+/**
+ * @addtogroup s08_p05
+ * @{
+ */
+
 #include <iostream>
 
 using namespace std;
@@ -80,3 +98,4 @@ int main() {
 
     return 0;
 }
+/** @} */

@@ -7,14 +7,14 @@
 /**
  * @addtogroup section05
  * @{
- * @defgroup s05_p04 ProgrammingExercise01
+ * @defgroup s05_pe01 ProgrammingExercise01
  * @brief Exercise to getting to know C++
  * @details Get to know the usage of basic inputs and outputs
  * @}
  */
 
  /**
-  * @addtogroup s05_p04
+  * @addtogroup s05_pe01
   * @{
   */
 #include <iostream>

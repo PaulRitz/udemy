@@ -1,3 +1,21 @@
+/**
+ * @file main.cpp
+ * @brief showcase of scopes in c++
+ */
+
+/**
+ * @addtogroup section11
+ * @{
+ * @defgroup s11_p12 ScopeExample
+ * @brief showcase of scopes in c++
+ * @}
+ */
+
+/**
+ * @addtogroup s11_p12
+ * @{
+ */
+
 #include <iostream>
 #include <cmath>
 #include <string>
@@ -78,3 +96,4 @@ void static_local_example(){
     num += 1000;
     cout << "Local static num is: " << num << " in static_local_example - end" << endl;
 }
+/** @} */

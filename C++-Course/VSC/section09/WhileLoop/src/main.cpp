@@ -1,3 +1,20 @@
+/**
+ * @file main.cpp
+ * @brief showcase of the while loop in c++
+ */
+
+/**
+ * @addtogroup section09
+ * @{
+ * @defgroup s09_p13 WhileLoop
+ * @brief showcase of the while loop in c++
+ * @}
+ */
+
+/**
+ * @addtogroup s09_p13
+ * @{
+ */
 #include <iostream>
 #include <vector>
 
@@ -71,3 +88,4 @@ int main() {
     cout << endl;
     return 0;
 }
+/** @} */

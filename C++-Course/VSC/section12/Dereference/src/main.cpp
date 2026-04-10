@@ -1,3 +1,20 @@
+/**
+ * @file main.cpp
+ * @brief showcase of dereferencing pointers in c++
+ */
+
+/**
+ * @addtogroup section12
+ * @{
+ * @defgroup s12_p03
+ * @brief showcase of dereferencing pointers in c++
+ * @}
+ */
+
+/**
+ * @addtogroup s12_p03
+ * @{
+ */
 #include <iostream>
 #include <cmath>
 #include <string>
@@ -65,3 +82,4 @@ int main() {
     cout << endl;
     return 0;
 }
+/** @} */

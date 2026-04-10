@@ -1,3 +1,20 @@
+/**
+ * @file main.cpp
+ * @brief showcase of default arguments in c++ functions
+ */
+
+/**
+ * @addtogroup section11
+ * @{
+ * @defgroup s11_p02 DefaultArguments
+ * @brief showcase of default arguments in c++ functions
+ * @}
+ */
+
+/**
+ * @addtogroup s11_p02
+ * @{
+ */
 #include <iostream>
 #include <iomanip>
 #include <cmath>
@@ -39,3 +56,4 @@ double calc_cost(double base_cost, double tax_rate, double shipping){
 void greeting(string name, string prefix, string suffix){
     cout << "Hello " << prefix + " " + name + " " + suffix << endl; 
 }
+/** @} */

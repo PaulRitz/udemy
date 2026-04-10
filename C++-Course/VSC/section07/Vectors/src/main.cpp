@@ -6,13 +6,13 @@
 /**
  * @addtogroup section07
  * @{
- * @defgroup s07_p05 Vectors
+ * @defgroup s07_p02 Vectors
  * @brief get to know c++ vectors and their syntax
  * @}
  */
 
  /**
-  * @addtogroup s07_p05
+  * @addtogroup s07_p02
   * @{
   */
 #include <iostream>

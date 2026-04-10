@@ -1,3 +1,21 @@
+/**
+ * @file main.cpp
+ * @brief programming exercise 02: practice using functions in c++
+ */
+
+/**
+ * @addtogroup section11
+ * @{
+ * @defgroup s11_pe02 ProgrammingExercise02
+ * @brief programming exercise 02: practice using functions in c++
+ * @}
+ */
+
+/**
+ * @addtogroup s11_pe02
+ * @{
+ */
+
 #include <iostream>
 #include <cmath>
 #include <string>
@@ -90,3 +108,4 @@ double kelvin_to_celsius(double val){
 double kelvin_to_fahrenheit(double val){
     return round(((val-273)*(9.0/5.0))+32);
 }
+/** @} */

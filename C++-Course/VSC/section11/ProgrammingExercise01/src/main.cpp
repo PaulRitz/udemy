@@ -1,7 +1,23 @@
 /**
  * @file main.cpp
+ * @brief programming exercise 01: practice using functions in c++
  * @details The goal of this programming exercise is to calculate different bills for
  * splitting the bill among a group of guests
+ */
+
+/**
+ * @addtogroup section11 
+ * @{
+ * @defgroup s11_pe01 ProgrammingExercise01
+ * @brief programming exercise 01: practice using functions in c++
+ * @details The goal of this programming exercise is to calculate different bills for
+ * splitting the bill among a group of guests
+ * @}
+ */
+
+/**
+ * @addtogroup s11_pe01
+ * @{
  */
 
 #include <iostream>
@@ -33,3 +49,4 @@ int main() {
     cout << endl;
     return 0;
 }
+/** @} */

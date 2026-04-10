@@ -1,3 +1,20 @@
+/**
+ * @file main.cpp
+ * @brief showcase of pass by reference functionality
+ */
+
+/**
+ * @addtogroup section11
+ * @{
+ * @defgroup s11_p10 PassByReference
+ * @brief showcase of pass by reference functionality
+ * @}
+ */
+
+/**
+ * @addtogroup s11_p10
+ * @{
+ */
 #include <iostream>
 #include <cmath>
 #include <string>
@@ -71,3 +88,4 @@ void print_vector(const vector<string> &v){
         cout << str << endl;
     }
 }
+/** @} */

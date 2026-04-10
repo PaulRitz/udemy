@@ -1,3 +1,20 @@
+/**
+ * @file main.cpp
+ * @brief programming exercise 08: practice using functions
+ */
+
+/**
+ * @addtogroup section11
+ * @{
+ * @defgroup s11_pe08 ProgrammingExercise08
+ * @brief programming exercise 08: practice using functions
+ * @}
+ */
+
+/**
+ * @addtogroup s11_pe08
+ * @{
+ */
 #include <iostream>
 #include <cmath>
 #include <string>
@@ -22,3 +39,4 @@ double a_penny_doubled_every_day(int n, double p){
     
     return a_penny_doubled_every_day(n-1, p) * 2.0;
 }
+/** @} */

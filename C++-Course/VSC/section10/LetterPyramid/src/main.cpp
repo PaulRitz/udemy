@@ -1,3 +1,40 @@
+/**
+ * @file main.cpp
+ * @brief extra task: letter pyramid
+ * @details: program asks for a string then builds a pyramid from it:
+ * input: hallo
+ * output:
+ *     h
+ *    hah
+ *   halah
+ *  halllah
+ * hallollah
+ * 
+ * -> my solution/tip use a state machine
+ */
+
+/**
+ * @addtogroup section10
+ * @{
+ * @defgroup s10_lp LetterPyramid
+ * @brief extra task: letter pyramid
+ * @details: program asks for a string then builds a pyramid from it:
+ * input: hallo
+ * output:
+ *     h
+ *    hah
+ *   halah
+ *  halllah
+ * hallollah
+ * 
+ * -> my solution/tip use a state machine
+ * @}
+ */
+
+/**
+ * @addtogroup s10_lp
+ * @{
+ */
 #include <iostream>
 #include <string>
 
@@ -68,3 +105,4 @@ int main() {
     cout << endl;
     return 0;
 }
+/** @} */

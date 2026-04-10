@@ -1,3 +1,20 @@
+/**
+ * @file main.cpp
+ * @brief showcase of relational operators in c++ and their usage
+ */
+
+/**
+ * @addtogroup section08
+ * @{
+ * @defgroup s08_p07 RelationalOperators
+ * @brief showcase of relational operators in c++ and their usage
+ * @}
+ */
+
+/**
+ * @addtogroup s08_p07
+ * @{
+ */
 #include <iostream>
 
 using namespace std;
@@ -38,3 +55,4 @@ int main() {
     cout << endl;
     return 0;
 }
+/** @} */

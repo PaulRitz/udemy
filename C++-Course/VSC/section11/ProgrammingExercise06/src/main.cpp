@@ -1,3 +1,20 @@
+/**
+ * @file main.cpp
+ * @brief programming exercise 06: practice using functions
+ */
+
+/**
+ * @addtogroup section11
+ * @{
+ * @defgroup s11_pe06 ProgrammingExercise06
+ * @brief programming exercise 06: practice using functions
+ * @}
+ */
+
+/**
+ * @addtogroup s11_pe06
+ * @{
+ */
 #include <iostream>
 #include <cmath>
 #include <string>
@@ -38,3 +55,4 @@ void clear_guest_list(string &g1, string &g2, string &g3){
     g2 = " ";
     g3 = " ";
 }
+/** @} */

@@ -4,6 +4,20 @@
  * --> This means Section 9 Code should use functions
  */
 
+/**
+ * @addtogroup section11
+ * @{
+ * @defgroup s11_cc CodeChallenge
+ * @details Code Challenge for Section 11 is to modify Code Challenge from Section 9
+ * --> This means Section 9 Code should use functions
+ * @}
+ */
+
+/**
+ * @addtogroup s11_cc
+ * @{
+ */
+
 #include <iostream>
 #include <cmath>
 #include <string>
@@ -235,3 +249,4 @@ bool set_duplicate_allowance(bool allow_duplicates, const vector<int> vec){
     }
     return allow_duplicates;
 }
+/** @} */

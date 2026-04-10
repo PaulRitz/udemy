@@ -1,3 +1,20 @@
+/**
+ * @file main.cpp
+ * @brief showcase of passing pointers v1
+ */
+
+/**
+ * @addtogroup section12
+ * @{
+ * @defgroup s12_p05 PassingPointers1
+ * @brief showcase of passing pointers v1
+ * @}
+ */
+
+/**
+ * @addtogroup s12_p05
+ * @{
+ */
 #include <iostream>
 #include <iomanip>
 #include <cmath>
@@ -38,3 +55,4 @@ int main() {
 void double_data(int* int_ptr){
     *int_ptr *= 2;
 }
+/** @} */

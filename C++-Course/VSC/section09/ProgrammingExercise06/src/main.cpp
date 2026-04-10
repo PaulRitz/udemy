@@ -1,3 +1,21 @@
+/**
+ * @file main.cpp
+ * @brief programming exercise 06: practice using control structures
+ */
+
+/**
+ * @addtogroup section09
+ * @{
+ * @defgroup s09_pe06 ProgrammingExercise06
+ * @brief programming exercise 06: practice using control structures
+ * @}
+ */
+
+/**
+ * @addtogroup s09_pe06
+ * @{
+ */
+
 #include <iostream>
 #include <vector>
 
@@ -55,3 +73,4 @@ int main() {
     cout << endl;
     return 0;
 }
+/** @} */

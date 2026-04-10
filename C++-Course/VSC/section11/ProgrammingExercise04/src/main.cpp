@@ -1,3 +1,20 @@
+/**
+ * @file main.cpp
+ * @brief programming exercise 04: practice using functions
+ */
+
+/**
+ * @addtogroup section11
+ * @{
+ * @defgroup s11_pe04 ProgrammingExercise04
+ * @brief programming exercise 04: practice using functions
+ * @}
+ */
+
+/**
+ * @addtogroup s11_pe04
+ * @{
+ */
 #include <iostream>
 #include <cmath>
 #include <string>
@@ -29,3 +46,4 @@ int find_area(int a){
 double find_area(double a, double b){
     return a*b;
 }
+/** @} */

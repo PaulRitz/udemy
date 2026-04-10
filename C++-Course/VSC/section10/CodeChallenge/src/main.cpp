@@ -1,5 +1,7 @@
 /**
- * A simple and very old method of sending secret messages is the substitution cipher.
+ * @file main.cpp
+ * @brief substitution cipher
+ * @details A simple and very old method of sending secret messages is the substitution cipher.
  * You might have used this cipher with your friends when you were a kid.
  * Basically, each letter of the alphabet gets replaced by another letter of the alphabet.
  * For example, every 'a' gets replaced with an 'X', and every 'b' gets replaced with a 'Z', etc.
@@ -15,7 +17,40 @@
  * 
  * To decrypt you can replace the character at position n in key
  * with the character at position n in alphabet.
+ */
+
+/**
+ * @defgroup section10 Section 10: Strings
+ * @brief In this section strings are presented and explained
+ */
+
+/**
+ * @addtogroup section10
+ * @{
+ * @defgroup s10_cc CodeChallenge
+ * @brief substitution cipher
+ * @details A simple and very old method of sending secret messages is the substitution cipher.
+ * You might have used this cipher with your friends when you were a kid.
+ * Basically, each letter of the alphabet gets replaced by another letter of the alphabet.
+ * For example, every 'a' gets replaced with an 'X', and every 'b' gets replaced with a 'Z', etc.
  * 
+ * Write a program that asks a user to enter a secret message.
+ * 
+ * Encrypt the message using the substitution cipher and display the necrypted message.
+ * The decrype the encrypted message back to the original message.
+ * 
+ * You may use the 2 strings below for your substitution.
+ * For example, to encrypt you can replace the character at position n in alphabet 
+ * with the character at position n in key.
+ * 
+ * To decrypt you can replace the character at position n in key
+ * with the character at position n in alphabet.
+ * @}
+ */
+
+/**
+ * @addtogroup s10_cc
+ * @{
  */
 
 
@@ -115,3 +150,4 @@ int main() {
     cout << endl;
     return 0;
 }
+/** @} */

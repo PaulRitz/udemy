@@ -1,3 +1,20 @@
+/**
+ * @file main.cpp
+ * @brief a program that shows how nested loops work
+ */
+
+/**
+ * @addtogroup section09
+ * @{
+ * @defgroup s09_p08
+ * @brief a program that shows how nested loops work
+ * @}
+ */
+
+/**
+ * @addtogroup s09_p08
+ * @{
+ */
 #include <iostream>
 #include <vector>
 
@@ -21,3 +38,4 @@ int main() {
     cout << endl;
     return 0;
 }
+/** @} */

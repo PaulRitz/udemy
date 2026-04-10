@@ -1,5 +1,7 @@
 /**
- * Shipping cost calculator
+ * @file main.cpp
+ * @brief shipping cost calculator
+ * @details Shipping cost calculator
  * 
  * Ask the user for package dimension in inches
  * length, width, height - these should be integers
@@ -9,6 +11,28 @@
  * Base cost $2.50
  * If package volume is greater than 100 cubic inches there is a 10% surcharge
  * If package volume is greater than 500 cubic inches there is a 25% surcharge
+ */
+
+/**
+ * @addtogroup section09
+ * @{
+ * @defgroup s09_p10 Shipping
+ * @brief shipping cost calculator
+ * @details Shipping cost calculator
+ * 
+ * Ask the user for package dimension in inches
+ * length, width, height - these should be integers
+ * 
+ * All dimension must be 10 inches or less or we cannot ship it
+ * 
+ * Base cost $2.50
+ * If package volume is greater than 100 cubic inches there is a 10% surcharge
+ * If package volume is greater than 500 cubic inches there is a 25% surcharge * @}
+ */
+
+/**
+ * @addtogroup s09_p10
+ * @{
  */
 
 #include <iostream>
@@ -58,3 +82,4 @@ int main() {
     cout << endl;
     return 0;
 }
+/** @} */
