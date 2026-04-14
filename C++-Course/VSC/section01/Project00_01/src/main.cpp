@@ -2,7 +2,14 @@
  * @defgroup section01 Section 01: Setup
  * @brief all projects that were created during the setup and preparation for the course
  */
-
+/**
+ * @defgroup PEs ProgrammingExercises
+ * @brief Programming Exercises
+ */
+/**
+ * @defgroup CCs CodeChallenges
+ * @brief CodeChallenges
+ */
 /**
  * @addtogroup section01
  * @{

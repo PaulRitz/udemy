@@ -115,6 +115,7 @@
  */
 
 /**
+ * @ingroup CCs
  * @addtogroup s09_cc
  * @{
  */

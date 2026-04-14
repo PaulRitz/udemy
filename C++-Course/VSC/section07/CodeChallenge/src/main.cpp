@@ -11,6 +11,7 @@
  */
 
  /**
+  * @ingroup CCs
   * @addtogroup s07_cc
   * @{
   */

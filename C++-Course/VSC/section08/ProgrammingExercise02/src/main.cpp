@@ -2,6 +2,18 @@
  * @file main.cpp
  * @brief programming exercise 02: practice using c++ operations
  */
+/**
+ * @addtogroup section08
+ * @{
+ * @defgroup s08_pe02 ProgrammingExercise02
+ * @brief programming exercise 02: practice using c++ operations
+ * @}
+ */
+/**
+ * @ingroup PEs
+ * @addtogroup s08_pe02
+ * @{
+ */
 #include <iostream>
 
 using namespace std;
@@ -41,3 +53,4 @@ int main() {
     cout << endl;
     return 0;
 }
+/** @} */

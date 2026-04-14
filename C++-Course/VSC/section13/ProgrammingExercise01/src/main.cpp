@@ -10,6 +10,7 @@
  * @}
  */
 /**
+ * @ingroup PEs
  * @addtogroup s13_pe01
  * @{
  */

@@ -25,6 +25,7 @@
  */
 
 /**
+ * @ingroup CCs
  * @addtogroup s08_cc
  * @{
  */

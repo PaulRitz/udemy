@@ -6,12 +6,13 @@
 /**
  * @addtogroup section11
  * @{
- * @defgroup s11_pe07
+ * @defgroup s11_pe07 ProgrammingExercise07
  * @brief programming exercise 07: practice using functions
  * @}
  */
 
 /**
+ * @ingroup PEs
  * @addtogroup s11_pe07
  * @{
  */

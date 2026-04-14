@@ -32,7 +32,11 @@
  * @}
  */
 
-
+/**
+ * @ingroup CCs
+ * @addtogroup s06_cc
+ * @{
+ */
 
 #include <iostream>
 
@@ -73,3 +77,4 @@ int main() {
     cout << endl;
     return 0;
 }
+/** @} */

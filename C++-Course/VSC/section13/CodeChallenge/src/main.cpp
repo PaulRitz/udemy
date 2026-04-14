@@ -64,6 +64,7 @@
  * @}
  */
 /**
+ * @ingroup CCs
  * @addtogroup s13_cc
  * @{
  */

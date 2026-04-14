@@ -1,13 +1,14 @@
 #include "ConvertSystem.h"
 
 ToConvert::ToConvert(int num)
-    :str_number{0},int_number{num},hex_number{},bin_number{} {
+    :str_number{0},int_number{num},hex_number{},bin_number{},oct_number{} {
         hex_number = DecTo("Hex");
         bin_number = DecTo("Bin");
+        oct_number = DecTo("OCT");
         std::cout << "A new number to convert is initialized: " << int_number << std::endl;
     }
 ToConvert::ToConvert(std::string num)
-    :str_number{num},int_number{},hex_number{},bin_number{} {
+    :str_number{num},int_number{},hex_number{},bin_number{},oct_number{} {
 
         if(str_number.size() >= 2 && str_number.at(1) == 'x'){
             str_number.erase(0,2);
@@ -15,15 +16,23 @@ ToConvert::ToConvert(std::string num)
                 str_number.at(i) = std::toupper(str_number.at(i));
             }
             hex_number = str_number;
-            int_number = HexTo();
+            // int_number = HexTo();
             bin_number = HexTo("BIN");
+            oct_number = HexTo("OCT");
             std::cout << "A new number to convert is initialized: 0x" << str_number << std::endl;
         }
-        else if(str_number.at(1) == 'b'){
+        else if(str_number.size() >= 2 && str_number.at(1) == 'b'){
             str_number.erase(0,2);
             bin_number = str_number;
-            int_number = BinTo();
+            // int_number = BinTo();
+            hex_number = BinTo("Hex");
+            oct_number = BinTo("OCT");
             std::cout << "A new number to convert is initialized: 0b" << str_number << std::endl;
+        }
+        else if(str_number.size() >= 2 && str_number.at(1) == 'o'){
+            str_number.erase(0,2);
+            oct_number = str_number;
+            
         }
     }
 ToConvert::ToConvert(ToConvert &source)
@@ -32,6 +41,35 @@ ToConvert::ToConvert(ToConvert &source)
         std::cout << "copied [0b" << bin_number << "]" << std::endl;
         std::cout << "copied [" << int_number << "]" << std::endl;
     }
+
+int ToConvert::OctTo(){
+    int result {};
+    int pot {};
+    for(int i {oct_number.size()-1};i>=0;i--){
+        if(oct_number.at(i) >= 48 && oct_number.at(i) <= 55){
+            result += (oct_number.at(i)-48) * pow(8,pot);
+        }else{
+            oct_number = "[ERROR]: NAN";
+            return -1;
+        }
+        pot++;
+    }
+    return result;
+}
+std::string ToConvert::OctTo(std::string conv){
+    for(size_t i{}; i < conv.size(); i++){
+        conv.at(i) = toupper(conv.at(i));
+    }
+    
+    int_number = OctTo();
+
+    if(conv == "HEX"){
+        DecTo("HEX");
+    }else if(conv == "BIN"){
+        DecTo("BIN");
+    }
+    
+}
 
 int ToConvert::HexTo(){
     int result {};
@@ -74,8 +112,9 @@ std::string ToConvert::HexTo(std::string conv){
     int_number = result;
     if(conv == "BIN"){
         return DecTo("BIN");
-    }
-    else{
+    }else if(conv == "OCT"){
+        return DecTo("OCT");
+    } else{
         return "[ERROR]: could not convert --invalid conversion goal" ;
     }
 }
@@ -111,6 +150,8 @@ std::string ToConvert::BinTo(std::string conv){
     int_number = result;
     if(conv == "HEX"){
         return DecTo("HEX");
+    } else if(conv == "OCT"){
+        return DecTo("OCT");
     }
     return "[ERROR]: unknown destination for convertion";
 }
@@ -203,8 +244,44 @@ std::string ToConvert::DecTo(std::string conv){
             }
             calc/=16;
         }
-        std::reverse(result.begin(), result.end());
+    }else if(conv == "OCT"){
+        while(!done){
+            if(calc > 0){
+                switch(calc%8){
+                    case 0:
+                        result += "0";
+                        break;
+                    case 1:
+                        result += "1";
+                        break;
+                    case 2:
+                        result += "2";
+                        break;
+                    case 3:
+                        result += "3";
+                        break;
+                    case 4:
+                        result += "4";
+                        break;
+                    case 5:
+                        result += "5";
+                        break;
+                    case 6:
+                        result += "6";
+                        break;
+                    case 7:
+                        result += "7";
+                        break;
+                    default:
+                        return "[ERROR]: NAN";
+                } 
+            } else {
+                done = true;
+            }
+            calc /= 8;
+        }
     }
+    std::reverse(result.begin(), result.end());
     return result;
 }
 
@@ -274,6 +351,7 @@ void ToConvert::display_obj(){
     std::cout << "--Decimal:            " << int_number << std::endl;
     std::cout << "--Hexadeximal:        0x" << hex_number << std::endl;
     std::cout << "--Binary:             0b" << bin_number << std::endl;
+    std::cout << "--Octal:              0o" << oct_number << std::endl;
 }
 
 void ToConvert::set_objName(std::string name){

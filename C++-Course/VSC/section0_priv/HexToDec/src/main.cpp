@@ -27,19 +27,18 @@ using namespace std;
 
 int main() {
 
-   ToConvert obj1 {15};
-
-    cout << obj1.get_hexNumber() << endl;
-    cout << obj1.get_intNumber() << endl;
-    cout << obj1.get_binNumber() << endl;
-
-    obj1.set_objName("Object 01");
-    
+    ToConvert obj1 {15};
+    obj1.set_objName("Object 01 - init with int");
     obj1.display_obj();
     
-    obj1.set_number("0b10");
-    
-    obj1.display_obj();
+    ToConvert obj2 {"0xFF8F"};
+    obj2.set_objName("Object 02 - init with hex");
+    obj2.display_obj();
+
+    ToConvert obj3 {"0b11011"};
+    obj3.set_objName("Object 03 - init with bin");
+    obj3.display_obj();
+
     cout << endl;
     return 0;
 }

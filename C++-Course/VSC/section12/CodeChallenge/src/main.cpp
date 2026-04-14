@@ -62,6 +62,7 @@
  */
 
 /**
+ * @ingroup CCs
  * @addtogroup s12_cc
  * @{
  */

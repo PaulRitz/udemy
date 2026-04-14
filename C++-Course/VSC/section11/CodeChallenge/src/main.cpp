@@ -14,6 +14,7 @@
  */
 
 /**
+ * @ingroup CCs
  * @addtogroup s11_cc
  * @{
  */

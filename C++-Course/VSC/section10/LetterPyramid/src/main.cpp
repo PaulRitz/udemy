@@ -32,6 +32,7 @@
  */
 
 /**
+ * @ingroup CCs
  * @addtogroup s10_lp
  * @{
  */

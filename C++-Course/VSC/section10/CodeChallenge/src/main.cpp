@@ -49,6 +49,7 @@
  */
 
 /**
+ * @ingroup CCs
  * @addtogroup s10_cc
  * @{
  */

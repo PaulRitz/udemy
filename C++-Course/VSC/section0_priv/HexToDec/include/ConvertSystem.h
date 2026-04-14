@@ -21,6 +21,7 @@
  * @param str_number the number used to store the input to build the object
  * @param hex_number the number as a hexadecimal value and string data type
  * @param bin_number the number as a binary number and string data type
+ * @param oct_number the number as a octal number and string data type
  * 
  * @note change variable name of *int_number* to *dec_number* 
  */
@@ -30,6 +31,7 @@ private:
     std::string hex_number;
     std::string str_number;
     std::string bin_number;
+    std::string oct_number;
     int int_number;
     /**
      * @brief used to update the other numbers when a value is changed
@@ -52,6 +54,13 @@ private:
      */
     int BinTo();
     std::string BinTo(std::string conv);
+    /**
+     * @brief returns and claclulates the goal value from the octal number
+     * @param conv if provided, and a valid input is given, then the function will convert to the 
+     * provided type
+     */
+    int OctTo();
+    std::string OctTo(std::string conv);
     /**
      * @brief returns and calculates the Hexadecimal value from the binary number
      * @param conv input in form of string to tell the function to what it should convert.
