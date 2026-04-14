@@ -20,13 +20,13 @@
 #include <string>
 #include <vector>
 
-#include "Dog.h"
+#include "../include/Dog.h"
 
 using namespace std;
 
 int main() {
     // task 1
-    Dog spot;
+    Dog2 spot;
     spot.set_age(2);
     spot.set_name("Spot");
 

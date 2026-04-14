@@ -9,7 +9,7 @@ ToConvert::ToConvert(int num)
 ToConvert::ToConvert(std::string num)
     :str_number{num},int_number{},hex_number{},bin_number{} {
 
-        if(str_number.at(1) == 'x'){
+        if(str_number.size() >= 2 && str_number.at(1) == 'x'){
             str_number.erase(0,2);
             for(size_t i{0}; i < str_number.size(); i++){
                 str_number.at(i) = std::toupper(str_number.at(i));
@@ -73,7 +73,10 @@ std::string ToConvert::HexTo(std::string conv){
     }
     int_number = result;
     if(conv == "BIN"){
-        return HexTo("BIN");
+        return DecTo("BIN");
+    }
+    else{
+        return "[ERROR]: could not convert --invalid conversion goal" ;
     }
 }
 
@@ -109,6 +112,7 @@ std::string ToConvert::BinTo(std::string conv){
     if(conv == "HEX"){
         return DecTo("HEX");
     }
+    return "[ERROR]: unknown destination for convertion";
 }
 
 std::string ToConvert::DecTo(std::string conv){
@@ -123,7 +127,7 @@ std::string ToConvert::DecTo(std::string conv){
     }
     if(conv == "BIN"){
         while(!done){
-            if(calc > 1){    
+            if(calc > 0){    
                 switch(calc%2){
                     case 0:
                         result += "0";
@@ -141,7 +145,7 @@ std::string ToConvert::DecTo(std::string conv){
         }
     }else if(conv == "HEX"){
         while(!done){
-            if(calc > 1){
+            if(calc > 0){
                 switch(calc%16){
                     case 0:
                         result += "0";
@@ -214,26 +218,35 @@ int ToConvert::get_intNumber(){
     return int_number;
 }
 
-void ToConvert::set_intNumber(int n){
+void ToConvert::set_number(int n){
     int_number=n;
+    updateValues("INT");
 }
-void ToConvert::set_hexNumber(std::string n){
-    size_t start_pos {};
-    if(n.at(0) == '0' && n.at(1) == 'x'){
-        start_pos = 2;
-    }
-    for(size_t i {start_pos}; i < n.size(); i++){
-        n.at(i) = toupper(n.at(i));
-        if(n.at(i) <= 'A' && n.at(i) >= 'Z'){
-            hex_number = "[ERROR]: NAN";
-            return;
+void ToConvert::set_number(std::string n){
+    std::string dest {};
+    if(n.size() >= 2 && (n.at(1) == 'x' || n.at(1) == 'b')){
+        if(n.at(1) == 'x'){
+            dest = "HEX";
+        }
+        if(n.at(1) == 'b'){
+            dest = "BIN";
+        }
+        n.erase(0,2);
+        for(size_t i{0}; i < n.size(); i++){
+            n.at(i) = std::toupper(n.at(i));
         }
     }
-    hex_number = n;
-    if(start_pos != 0){
-        hex_number.insert(0,"0x");
+    else{
+        hex_number = "[ERROR]: NAN";
+        return;
     }
-    updateValues("HEX");
+    if(dest == "HEX"){
+        hex_number = n;
+    }
+    else if(dest == "BIN"){
+        bin_number = n;
+    }
+    updateValues(dest);
 }
 
 void ToConvert::updateValues(std::string origin){
@@ -241,14 +254,14 @@ void ToConvert::updateValues(std::string origin){
         origin.at(i) = toupper(origin.at(i));
     }
     if(origin == "HEX"){
-        HexTo("BIN");
+        bin_number = ("BIN");
     }
     else if(origin == "BIN"){
-        BinTo("HEX");
+        hex_number = BinTo("HEX");
     }
     else if(origin == "DEC"){
-        DecTo("BIN");
-        DecTo("HEX");
+        bin_number = ("BIN");
+        hex_number = ("HEX");
     }
     else{
         int_number = -1;
@@ -264,5 +277,6 @@ void ToConvert::display_obj(){
 }
 
 void ToConvert::set_objName(std::string name){
+    std::cout << "object name is now: " << name << std::endl;
     obj_name = name;
 }

@@ -27,7 +27,17 @@ nPT:
 	@cp -R templates/project_templates/$(TN) ./section$(S)/$(PN)
 	@echo "Adding a new subdirectory to section$(S) level CMakeLists file."
 	@echo "add_subdirectory($(PN))" >> section$(S)/CMakeLists.txt
-
+nPC:
+	@if [ -z "$(S)" ]; then echo "Fehler: S ist leer!"; exit 1; fi
+	@if [ -z "$(PN)" ]; then echo "Fehler: PN ist leer!"; exit 1; fi
+	@if [ -z "$(CPN)" ]; then echo "Fehler: CPN ist leer!"; exit 1; fi
+	@if [ -z "$(CS)" ]; then echo "Fehler: CS ist leer!"; exit 1; fi
+	@echo "Building a Project from older project:"
+	@echo "copying section$(CS)/$(CPN) to section$(S)/$(PN)"
+	@cp -R section$(CS)/$(CPN) ./section$(S)/$(PN)
+	@echo "Adding a new subdirectory to section$(S) level CMakeLists file."
+	@echo "add_subdirectory($(PN))" >> section$(S)/CMakeLists.txt
+	
 rmProject:
 	@if [ -z "$(S)" ]; then echo "Fehler: S ist leer!"; exit 1; fi
 	@if [ -z "$(PN)" ]; then echo "Fehler: PN ist leer!"; exit 1; fi

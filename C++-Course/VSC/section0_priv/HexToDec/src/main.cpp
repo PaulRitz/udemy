@@ -7,6 +7,7 @@
  * @{
  * @defgroup s0_priv_convertsystem
  * @brief small library that converts from one number system to another
+ * @note current: only hex to dec and dec to hex, to add: hex to bin, bin to dec, etc.
  * @}
  */
 /**
@@ -26,15 +27,19 @@ using namespace std;
 
 int main() {
 
-    ToConvert obj1 {"F12C3"};
+   ToConvert obj1 {15};
 
+    cout << obj1.get_hexNumber() << endl;
     cout << obj1.get_intNumber() << endl;
-    cout << obj1.get_strNumber() << endl;
-    obj1.HexToDec();
-    cout << obj1.get_intNumber() << endl;
+    cout << obj1.get_binNumber() << endl;
 
-    cout << obj1.DecToHex() << endl;;
-
+    obj1.set_objName("Object 01");
+    
+    obj1.display_obj();
+    
+    obj1.set_number("0b10");
+    
+    obj1.display_obj();
     cout << endl;
     return 0;
 }

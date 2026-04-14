@@ -1,3 +1,4 @@
 {
-    "cmake.sourceDirectory": "/home/paulritz/Documents/Studium/gitRepos/udemy/C++-Course/VSC"
+"cmake.sourceDirectory": "${workspaceFolder}/C++-Course/VSC",
+"cmake.buildDirectory": "${workspaceFolder}/build"
 }

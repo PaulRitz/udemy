@@ -37,10 +37,10 @@ public:
     bool is_dead();
 };
 
-class Account {
+class Account2 {
 private:
     // attributes
-    string name {"Account"};
+    string name {"Account2"};
     double balance {0.0};
 
 public:

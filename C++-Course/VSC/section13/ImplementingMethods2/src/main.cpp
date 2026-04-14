@@ -26,9 +26,9 @@ using namespace std;
 
 int main() {
 
-    Account frank_account;
+    Account5 frank_account;
 
-    frank_account.set_name("Frank's account");
+    frank_account.set_name("Frank's account5");
     frank_account.set_balance(1000.0);
 
     if(frank_account.deposit(200.0)){

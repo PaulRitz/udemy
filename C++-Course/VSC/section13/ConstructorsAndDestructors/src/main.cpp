@@ -5,7 +5,7 @@
 /**
  * @addtogroup section13
  * @{
- * @defgroup s13_p06
+ * @defgroup s13_p06 ConstructorsAndDestructors
  * @brief a brief decription of the program
  * @}
  */

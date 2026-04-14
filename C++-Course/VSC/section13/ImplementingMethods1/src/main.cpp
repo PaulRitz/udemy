@@ -22,7 +22,7 @@
 
 using namespace std;
 
-class Account {
+class Account4 {
 private:
     // attributes
     string name;
@@ -42,19 +42,19 @@ public:
     bool withdraw(double amount);
 };
 
-void Account::set_name(string n){
+void Account4::set_name(string n){
     name = n;
 }
-string Account::get_name(){
+string Account4::get_name(){
     return name;
 }
 
-bool Account::deposit(double amount){
+bool Account4::deposit(double amount){
     balance += amount;
     // cout << "In deposit" << endl;
     return true;
 }
-bool Account::withdraw(double amount){
+bool Account4::withdraw(double amount){
     if(balance - amount >= 0){
     balance -= amount;
     // cout << "In Withdraw" << endl;
@@ -66,25 +66,25 @@ bool Account::withdraw(double amount){
 }
 
 int main() {
-    Account frank_account;
-    frank_account.set_name("Frank's account");
-    frank_account.set_balance(1000.0);
+    Account4 frank_account4;
+    frank_account4.set_name("Frank's account4");
+    frank_account4.set_balance(1000.0);
 
-    if(frank_account.deposit(200.0)){
+    if(frank_account4.deposit(200.0)){
         cout << "Deposit OK" << endl;
     }
     else{
         cout << "Deposit Not allowed" << endl; 
     }
 
-    if(frank_account.withdraw(500.0)){
+    if(frank_account4.withdraw(500.0)){
         cout << "Withdrawal OK" << endl;
     }
     else{
         cout << "Not sufficient funds" << endl;
     }
 
-    if(frank_account.withdraw(1500.0)){
+    if(frank_account4.withdraw(1500.0)){
         cout << "Withdrawal OK" << endl;
     }
     else {

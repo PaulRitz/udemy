@@ -40,10 +40,10 @@ public:
     bool is_dead();
 };
 
-class Account {
+class Account0 {
 public:
     // attributes
-    string name {"Account"};
+    string name {"Account0"};
     double balance {0.0};
 
     // methods
@@ -58,10 +58,10 @@ int main() {
 
     Player0* enemy = new Player0;
 
-    Account Frank_acc;
-    Account Jim_acc;
+    Account0 Frank_acc;
+    Account0 Jim_acc;
 
-    Account* Mary_acc;
+    Account0* Mary_acc;
     
     cout << endl;
     return 0;

@@ -38,10 +38,10 @@ public:
     bool is_dead();
 };
 
-class Account {
+class Account1 {
 public:
     // attributes
-    string name {"Account"};
+    string name {"Account1"};
     double balance {0.0};
 
     // methods
@@ -85,18 +85,18 @@ int main() {
     cout << "==========================================" << endl;
     // Example 2
 
-    Account frank_account;
-    frank_account.name = "Frank's account";
-    frank_account.balance = 5000.0;
+    Account1 frank_account1;
+    frank_account1.name = "Frank's account1";
+    frank_account1.balance = 5000.0;
 
-    frank_account.deposit(1000.0);
-    frank_account.withdraw(500.0);
+    frank_account1.deposit(1000.0);
+    frank_account1.withdraw(500.0);
 
-    Account* mary_account = new Account;
-    mary_account->name = "Mary's account";
-    mary_account->balance = 67000.0;
-    mary_account->deposit(6969.69);
-    mary_account->withdraw(4242.42);
+    Account1* mary_account1 = new Account1;
+    mary_account1->name = "Mary's account1";
+    mary_account1->balance = 67000.0;
+    mary_account1->deposit(6969.69);
+    mary_account1->withdraw(4242.42);
 
     // Example 2
     cout << "==========================================" << endl;

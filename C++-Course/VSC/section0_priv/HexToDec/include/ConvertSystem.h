@@ -80,14 +80,14 @@ public:
      * 
      * @param n this is the value that will be assigned to the int_number variable;
      */
-    void set_intNumber(int n);
+    void set_number(int n);
     /**
      * @brief enables user to change the string of the hex number after the initialization of the object
      * @note does not make sense without updating the hex number as well (automatically) (in current implementation)
      * 
      * @param str this is the string that will be assigned to the hex_number variable;
      */
-    void set_hexNumber(std::string str);
+    void set_number(std::string str);
     /**
      * @brief enables user to change the name of the display object (only with this function not possible during initialization)
      */

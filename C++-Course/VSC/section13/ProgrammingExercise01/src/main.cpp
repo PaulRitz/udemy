@@ -5,7 +5,7 @@
 /**
  * @addtogroup section13
  * @{
- * @defgroup s13_pe01 ProgramminExercise01
+ * @defgroup s13_pe01 ProgrammingExercise01
  * @brief programming exercise 01: practice using c++ classes and objects
  * @}
  */
@@ -22,7 +22,7 @@
 
 using namespace std;
 
-class Dog{
+class Dog0{
     public:
     int age {};
     string name {"Name"};
@@ -30,7 +30,7 @@ class Dog{
 
 int main() {
 
-    Dog spot;
+    Dog0 spot;
     spot.name = "Spot";
     spot.age = 5;
     
