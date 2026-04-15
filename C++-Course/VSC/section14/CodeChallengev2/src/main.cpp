@@ -1,7 +1,8 @@
 /**
  * @file main.cpp
+ * @note this is the version with global functions
  * @brief code challenge: practice overloading operators as member and non member functions
- * @details Overloading the folling operators in the provided myString1 class.
+ * @details Overloading the folling operators in the provided myString2 class.
  * To gain experience overloading operators, you should do this challenge twice.
  * First, overload the operators using member functions and then in another project overload the same operators
  * again using non-member functions.
@@ -36,9 +37,10 @@
 /**
  * @addtogroup section14
  * @{
- * @defgroup s14_cc CodeChallengev1
+ * @defgroup s14_cc_ CodeChallengev2
+ * @note this is the version with global functions
  * @brief code challenge: practive overloading operators as member and non member functions
- * @details Overloading the folling operators in the provided myString1 class.
+ * @details Overloading the folling operators in the provided myString2 class.
  * To gain experience overloading operators, you should do this challenge twice.
  * First, overload the operators using member functions and then in another project overload the same operators
  * again using non-member functions.
@@ -72,7 +74,7 @@
  */
 /**
  * @ingroup CCs
- * @addtogroup s14_cc
+ * @addtogroup s14_cc_
  * @{
  */
 
@@ -84,18 +86,18 @@
 
 using namespace std;
 
-#include "../include/myString1.h"
+#include "../include/myString2.h"
 
 int main() {
 
-    myString1 obj1 {"TEST"};
-    myString1 obj2 {"Hallo"};
-    myString1 obj3 {"Halzo"};
-    myString1 obj4 {"Hallenbad"};
-    myString1 obj5 {obj1 + " " + obj2};
-    myString1 obj6 {obj1};
+    myString2 obj1 {"TEST"};
+    myString2 obj2 {"Hallo"};
+    myString2 obj3 {"Halzo"};
+    myString2 obj4 {"Hallenbad"};
+    myString2 obj5 {obj1 + " " + obj2};
+    myString2 obj6 {obj1};
     obj6+=obj3;
-    myString1 obj7 {obj6};
+    myString2 obj7 {obj6};
     obj7*=3;
 
     cout << obj1 << endl;

@@ -25,6 +25,7 @@ set(CMAKE_MODULE_PATH "${PROJECT_SOURCE_DIR}/cmake/")
 include(Docs)
 
 # SUBDIRECTORIES
+add_subdirectory(section15)
 add_subdirectory(section14)
 add_subdirectory(section0_priv)
 add_subdirectory(section13)
@@ -109,6 +110,7 @@ endforeach()
 # 2. Targets für JEDE SEKTION
 foreach(
         # SECTION-INSTALL-TARGETS 
+ 	section15
  	section14
  	section0_priv
  	section13
