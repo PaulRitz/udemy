@@ -19,6 +19,7 @@ myStringv3::myStringv3(const myStringv3 &source)
     :str{nullptr} {
         str = new char [std::strlen(source.str)+1];
         std::strcpy(str, source.str);
+        std::cout << "Copy constructor used" << std::endl;
     }
 myStringv3::myStringv3(myStringv3 &&source)
     :str(source.str){
@@ -26,7 +27,12 @@ myStringv3::myStringv3(myStringv3 &&source)
         std::cout << "Move constructor used" << std::endl;
     }
 myStringv3::~myStringv3(){
-    delete [] str;
+    if(str==nullptr){
+        std::cout << "calling destructor for myStringv3: nullptr" << std::endl;
+    }else{    
+    std::cout << "calling destructor for myStringv3: " << str << std::endl;
+    }    
+delete [] str;
 }
 
 void myStringv3::display()const{
