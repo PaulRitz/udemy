@@ -1,6 +1,7 @@
 #include "Account6.h"
 
-Account6::Account6() {}
+Account6::Account6()
+    :balance{0.0},name{"None"} {}
 Account6::~Account6() {}
 
 void Account6::deposit(double amount){

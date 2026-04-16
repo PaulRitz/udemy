@@ -13,6 +13,7 @@
 
 class Savings_Account0: public Account6 {
 public:
+    double interest_rate;
     Savings_Account0();
     ~Savings_Account0();
 

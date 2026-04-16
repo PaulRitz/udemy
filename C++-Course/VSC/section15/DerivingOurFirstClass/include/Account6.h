@@ -10,10 +10,13 @@
 #define _ACCOUNT6_H_
 
 #include <iostream>
+#include <string>
 
 class Account6 {
 private:
 public:
+    double balance;
+    std::string name;
     void deposit(double amount);
     void withdraw(double amount);
     Account6();

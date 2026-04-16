@@ -33,20 +33,21 @@ int main() {
 
     cout << "\n=======Account=======" << endl;
     // Example 1 - Class: Account
-
+    
     Account6 acc1{};
     acc1.deposit(2000.0);
     acc1.withdraw(500.0);
-
+    
     cout << endl;
-
+    
     Account6* acc2 {nullptr};
     acc2 = new Account6();
     acc2->deposit(1000.0);
     acc2->withdraw(250.0);
     delete acc2;
-
+    
     // Example 1 - Class: Account
+    cout << "=======Account=======" << endl;
     cout << "\n=======Savings Account=======" << endl;
     // Example 2 - Class: Savings Account
 
@@ -63,7 +64,7 @@ int main() {
     delete sav_acc2;
 
     // Example 2 - Class: Savings Account
-    cout << "\n=======Savings Account=======" << endl;
+    cout << "=======Savings Account=======" << endl;
 
     cout << endl;
     return 0;

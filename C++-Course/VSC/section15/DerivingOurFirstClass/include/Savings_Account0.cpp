@@ -1,6 +1,7 @@
 #include "Savings_Account0.h"
 
-Savings_Account0::Savings_Account0() {}
+Savings_Account0::Savings_Account0()
+    :interest_rate{3.0} {}
 Savings_Account0::~Savings_Account0() {}
 
 void Savings_Account0::deposit(double amount) {
