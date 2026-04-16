@@ -53,6 +53,9 @@ public:
     bool withdraw(double amount);
 
     double get_balance() const;
+
+    bool operator+=(const double amount);
+    bool operator-=(const double amount);
 };
 #endif
 /** @} */

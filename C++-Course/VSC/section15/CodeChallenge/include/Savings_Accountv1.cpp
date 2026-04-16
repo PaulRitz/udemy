@@ -10,8 +10,11 @@ Savings_Accountv1::Savings_Accountv1(std::string name, double balance, double in
     }
 
 std::ostream &operator<<(std::ostream &out, const Savings_Accountv1 &source){
-    out << "[SAVINGS_ACCOUNT] name: " << source.name << ", balance: " << source.balance << ", interest rate: " << source.interest_rate << "%";
+    out << "[SAVINGS ACCOUNT] name: " << source.name << ", balance: " << source.balance << ", interest rate: " << source.interest_rate << "%";
     return out;
+}
+bool Savings_Accountv1::operator+=(const double amount){
+    return this->deposit(amount);
 }
 
 bool Savings_Accountv1::deposit(double amount){

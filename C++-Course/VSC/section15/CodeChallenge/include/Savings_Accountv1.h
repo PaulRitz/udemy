@@ -48,6 +48,7 @@ public:
                         double balance = default_balance, 
                         double interest_rate = default_interest_rate);
     bool deposit(double amount);
+    bool operator+=(const double amount);
 };
 #endif
 /** @} */

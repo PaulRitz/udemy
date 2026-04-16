@@ -77,18 +77,39 @@ using namespace std;
 #include "../include/Savings_Accountv1.h"
 #include "../include/Account_Util.h"
 #include "../include/Checking_Accountv1.h"
+#include "../include/Trust_Accountv1.h"
 
 int main() {
     cout.precision(2);
     cout << fixed;
+    cout << "\n==================== Accountv1 ====================" << endl;
 
-    Checking_Accountv1 ch_acc1 {"Kevin", 500.0};
+    Accountv1 acc1 {"Anna", 700.0};
+    cout << acc1 << endl;
+    acc1 += 700;
+    acc1 -= 1400;
 
-    cout << ch_acc1 << endl;
+    cout << "\n==================== Savings Accountv1 ====================" << endl;
+    Savings_Accountv1 s_acc1 {"Paul", 1200.0, 12};
+    cout << s_acc1 << endl;
+    s_acc1 += 1000;
+    s_acc1 -= 200.0;
 
-    ch_acc1.deposit(1000.0);
-    ch_acc1.withdraw(3000.0);
-    ch_acc1.withdraw(100.0);
+    cout << "\n==================== Checking Accountv1 ====================" << endl;
+    Checking_Accountv1 c_acc1 {"David", 1000.0};
+    cout << c_acc1 << endl;
+    c_acc1 += 1000.0;
+    c_acc1 -= 10;
+
+    cout << "\n==================== Trust Accountv1 ====================" << endl;
+    Trust_Accountv1 t_acc1 {"Markus", 50000.0, 27};
+    cout << t_acc1 << endl;
+    t_acc1 += 1000.0;
+    t_acc1 -= 50;
+    t_acc1 -= 50;
+    t_acc1 -= 50;
+    t_acc1 -= 50;
+    t_acc1 -= 50;
 
     cout << endl;
     return 0;

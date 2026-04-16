@@ -1,0 +1,37 @@
+#include "Trust_Accountv1.h"
+
+Trust_Accountv1::Trust_Accountv1(std::string name, double balance, double interest_rate)
+    :Savings_Accountv1(name, balance, interest_rate), withdrawal_counter{0} {}
+
+std::ostream &operator<<(std::ostream &out, const Trust_Accountv1 &source){
+    out << "[TRUST ACCOUNT] name: " << source.name << ", balance: " << source.balance << ", interest rate: " << source.interest_rate << "%";
+    return out;
+}
+bool Trust_Accountv1::operator+=(const double amount){
+    return this->deposit(amount);
+}
+bool Trust_Accountv1::operator-=(const double amount){
+    return this->withdraw(amount);
+}
+
+bool Trust_Accountv1::withdraw(double amount){
+    if(this->withdrawal_counter > 3){
+        std::cout << "[ERROR]: withdrawal unsuccessfull" << std::endl;
+        std::cout << "[ERROR]: Too many withdrawals, come back next year" << std::endl << std::endl;
+        return false;
+    }else{
+        if(Accountv1::withdraw(amount)){
+            this->withdrawal_counter++;
+            return true;
+        }else{
+            return false;
+        }
+    }
+}
+
+bool Trust_Accountv1::deposit(double amount){
+    if(amount >= 5000.0){
+        amount += 50.0;
+    }
+    return Savings_Accountv1::deposit(amount);
+}

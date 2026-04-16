@@ -1,5 +1,5 @@
 /**
- * @file Checking_Accountv1.h
+ * @file Trust_Accountv1.h
  * @brief code challenge: practice using inheritance
  * @details You are provided a simple Account class hierarchy that contains
  * Accountv1 - Base class
@@ -31,19 +31,22 @@
  * @addtogroup s15_cc
  * @{
  */
-#ifndef _CHECKING_ACCOUNTV1_H_
-#define _CHECKING_ACCOUNTV1_H_
+#ifndef _TRUST_ACCOUNTV1_H_
+#define _TRUST_ACCOUNTV1_H_
 
-#include "Accountv1.h"
+#include "Savings_Accountv1.h"
 
-class Checking_Accountv1: public Accountv1 {
-    friend std::ostream &operator<<(std::ostream &out, const Checking_Accountv1 &source);
+class Trust_Accountv1: public Savings_Accountv1 {
+    friend std::ostream &operator<<(std::ostream &out, const Trust_Accountv1 &source);
 private:
-    static constexpr double default_fee = 1.50;
+    int withdrawal_counter;
 public:
-    Checking_Accountv1(std::string name, double balance);
+    Trust_Accountv1(std::string name, double balance, double interest_rate);
 
-    bool withdraw(const double amount);
+    bool deposit(double amount);
+    bool withdraw(double amount);
+
+    bool operator+=(const double amount);
     bool operator-=(const double amount);
 };
 
