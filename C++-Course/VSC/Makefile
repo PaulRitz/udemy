@@ -92,3 +92,7 @@ pack-custom:
 	cd ../../build && \
 	cmake -DCPACK_MODE=custom -DCPACK_CUSTOM_COMPONENTS="section${S}_${PN}" ../C++-Course/VSC/ && \
 	cpack
+
+reload:
+	rm ../../.vscode/launch.json
+	cp templates/launch.json.template ../../.vscode/launch.json

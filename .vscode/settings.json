@@ -1,4 +1,1 @@
-{
-"cmake.sourceDirectory": "${workspaceFolder}/C++-Course/VSC",
-"cmake.buildDirectory": "${workspaceFolder}/build"
-}
+{"cmake.sourceDirectory": "${workspaceFolder}/C++-Course/VSC", "cmake.buildDirectory": "${workspaceFolder}/build"}

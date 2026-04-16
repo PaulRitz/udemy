@@ -8,17 +8,10 @@
         "program": "${command:cmake.launchTargetPath}",
         "args": [],
         "stopAtEntry": false,
-        "cwd": "${command:cmake.launchTargetDirectory}",
+        "cwd": "${workspaceFolder}",
         "externalConsole": false,
         "MIMode": "gdb",
-        "preLaunchTask": "cmake: build",
-        "setupCommands": [
-            {
-                "description": "Enable pretty-printing for gdb",
-                "text": "-enable-pretty-printing",
-                "ignoreFailures": true
-            }
-        ]
+        "preLaunchTask": "cmake: build"
     }
     ]
 }
