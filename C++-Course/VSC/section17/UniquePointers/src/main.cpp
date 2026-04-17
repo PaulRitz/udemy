@@ -3,7 +3,11 @@
  * @brief showcase of the unique smart pointer
  */
 /**
- * @addtogroup section16
+ * @defgroup section17 Section 17: Smart Pointers
+ * @brief this section showcases smart pointers in c++
+ */
+/**
+ * @addtogroup section17
  * @{
  * @defgroup s17_p01 UniquePointers
  * @brief showcase of the unique smart pointer
