@@ -1,15 +1,15 @@
 /**
  * @file main.cpp
- * @brief showcase of the unique smart pointer
+ * @brief showcase of the shared smart pointer
  */
 /**
  * @addtogroup section16
  * @{
- * @defgroup s17_p01 UniquePointers
- * @brief showcase of the unique smart pointer
+ * @defgroup s17_p02 SharedPointers
+ * @brief showcase of the shared smart pointer
  */
 /**
- * @addtogroup s17_p01
+ * @addtogroup s17_p02
  * @{
  */
 

@@ -3,7 +3,7 @@ nSection: updateCMake
 	@mkdir -p section$(S)
 	@cp templates/InSectionCMake.template section$(S)/CMakeLists.txt
 
-nP:
+nP_wL:
 	@if [ -z "$(PN)" ]; then echo "Fehler: PN ist leer!"; exit 1; fi
 	@if [ -z "$(S)" ]; then echo "Fehler: S ist leer!"; exit 1; fi
 	@mkdir -p section$(S)/$(PN)
@@ -20,6 +20,24 @@ nP:
 	@echo "Adding a new subdirectory to section$(S) level CMakeLists file."
 	@echo "add_subdirectory($(PN))" >> section$(S)/CMakeLists.txt
 	@cp templates/InIncludeCMake.template section$(S)/$(PN)/include/CMakeLists.txt
+	@echo "Ordnerstruktur für section$(S)/$(PN) erstellt"
+
+nP:
+	@if [ -z "$(PN)" ]; then echo "Fehler: PN ist leer!"; exit 1; fi
+	@if [ -z "$(S)" ]; then echo "Fehler: S ist leer!"; exit 1; fi
+	@mkdir -p section$(S)/$(PN)
+	@cp templates/Makefile.template section$(S)/$(PN)/Makefile
+	@cd section$(S)/$(PN) && \
+	mkdir -p src && \
+	mkdir -p include && \
+	mkdir -p build
+	@cp templates/main.cpp.template section$(S)/$(PN)/src/main.cpp
+	@touch section$(S)/$(PN)/include/CMakeLists.txt
+	@cp templates/InSourceCMake.template section$(S)/$(PN)/src/CMakeLists.txt
+	@cp templates/InProjectCMake.template section$(S)/$(PN)/CMakeLists.txt
+	@echo "Adding a new subdirectory to section$(S) level CMakeLists file."
+	@echo "add_subdirectory($(PN))" >> section$(S)/CMakeLists.txt
+# 	@cp templates/InIncludeCMake.template section$(S)/$(PN)/include/CMakeLists.txt
 	@echo "Ordnerstruktur für section$(S)/$(PN) erstellt"
 
 
