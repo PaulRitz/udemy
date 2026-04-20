@@ -25,6 +25,14 @@ if(LIB_SOURCES)
     target_link_libraries(${FULL_NAME} PRIVATE ${LIB_NAME})
 endif()
 
+file(MAKE_DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/../files/in")
+file(MAKE_DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/../files/out")
+
+target_compile_definitions(${FULL_NAME} PRIVATE
+                        FILES_IN_DIR="${CMAKE_CURRENT_SOURCE_DIR}/../files/in"
+                        FILES_OUT_DIR="${CMAKE_CURRENT_SOURCE_DIR}/../files/out"
+                        )
+
 if(CPACK_SOURCE_CODE_STRUCTURE)
         # Automatisch alle .cpp und .c Dateien finden
         file(GLOB SRC_FILES "*.cpp" "*.c")

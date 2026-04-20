@@ -11,7 +11,11 @@ nP_wL:
 	@cd section$(S)/$(PN) && \
 	mkdir -p src && \
 	mkdir -p include && \
-	mkdir -p build
+	mkdir -p build && \
+	mkdir -p files && \
+	cd files && \
+	mkdir -p in && \
+	mkdir -p out
 	@cp templates/main.cpp.template section$(S)/$(PN)/src/main.cpp
 	@cp templates/InSourceCMake.template section$(S)/$(PN)/src/CMakeLists.txt
 	@cp templates/InProjectCMake.template section$(S)/$(PN)/CMakeLists.txt
@@ -30,7 +34,11 @@ nP:
 	@cd section$(S)/$(PN) && \
 	mkdir -p src && \
 	mkdir -p include && \
-	mkdir -p build
+	mkdir -p build && \
+	mkdir -p files && \
+	cd files && \
+	mkdir -p in && \
+	mkdir -p out
 	@cp templates/main.cpp.template section$(S)/$(PN)/src/main.cpp
 	@touch section$(S)/$(PN)/include/CMakeLists.txt
 	@cp templates/InSourceCMake.template section$(S)/$(PN)/src/CMakeLists.txt
