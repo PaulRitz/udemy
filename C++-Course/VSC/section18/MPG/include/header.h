@@ -3,7 +3,7 @@
  * @brief a brief description of the files content
  */
 /**
- * @addtogroup sXX_pXXX
+ * @addtogroup sXX_XXX
  * @{
  */
 #ifndef _HEADER_H_

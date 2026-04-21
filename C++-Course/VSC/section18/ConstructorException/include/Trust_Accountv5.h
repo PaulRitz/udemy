@@ -3,7 +3,7 @@
  * @brief showcase of ConstructorExceptions
  */
 /**
- * @addtogroup s18_07
+ * @addtogroup s18_p07
  * @{
  */
 #ifndef _TRUST_ACCOUNTV5_H_

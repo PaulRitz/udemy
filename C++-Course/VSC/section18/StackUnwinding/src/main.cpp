@@ -6,9 +6,9 @@
  * the thrown exception is found
  */
 /**
- * @addtogroup
+ * @addtogroup section18
  * @{
- * @defgroup s18_p05
+ * @defgroup s18_p05 StackUnwinding
  * @brief showcase of stack unwinding when exceptions are thrown
  * @details When an exception is thrown the exception all functions etc.
  * will be canceled and unwinded from the stack until an exception handler for 

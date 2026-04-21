@@ -3,9 +3,9 @@
  * @brief showcase of pure virtual functions in c++ polymorphism
  */
 /**
- * @addtogroup
+ * @addtogroup section16
  * @{
- * @defgroup s16_p06
+ * @defgroup s16_p06 PureVirtualFunctions
  * @brief showcase of pure virtual functions in c++ polymorphism
  * @}
  */

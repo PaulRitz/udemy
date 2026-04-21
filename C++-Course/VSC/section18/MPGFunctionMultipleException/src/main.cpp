@@ -3,9 +3,9 @@
  * @brief showcase of exception handling for multiple exceptions 
  */
 /**
- * @addtogroup
+ * @addtogroup section18
  * @{
- * @defgroup s18_p04
+ * @defgroup s18_p04 MPGFunctionMultipleException
  * @brief showcase of exception handling for multiple exceptions 
  * @}
  */

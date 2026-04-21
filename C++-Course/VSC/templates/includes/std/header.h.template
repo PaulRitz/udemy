@@ -1,0 +1,12 @@
+/**
+ * @file header.h
+ * @brief
+ */
+/**
+ * @addtogroup sXX_XXX
+ * @{
+ */
+#ifndef _HEADER_H_
+#define _HEADER_H_
+#endif
+/** @} */
