@@ -25,6 +25,7 @@ set(CMAKE_MODULE_PATH "${PROJECT_SOURCE_DIR}/cmake/")
 include(Docs)
 
 # SUBDIRECTORIES
+add_subdirectory(section21)
 add_subdirectory(section20)
 add_subdirectory(section19)
 add_subdirectory(section18)
@@ -44,6 +45,23 @@ add_subdirectory(section06)
 add_subdirectory(section05)
 add_subdirectory(section04)
 add_subdirectory(section01)
+
+add_custom_target(pdf
+    # Step 1: Run Doxygen using the Doxyfile in the project root
+    COMMAND doxygen "${CMAKE_SOURCE_DIR}/Doxyfile"
+    
+    # Step 2: Run 'make' inside the generated docs/latex folder
+    COMMAND make -C "${CMAKE_SOURCE_DIR}/docs/latex"
+    
+    # Step 3: Move the finished PDF up into the main docs/ folder
+    COMMAND cp "${CMAKE_SOURCE_DIR}/docs/latex/refman.pdf" "${CMAKE_SOURCE_DIR}/docs/Project_Documentation.pdf"
+    
+    # Ensure this all originates from the project root
+    WORKING_DIRECTORY "${CMAKE_SOURCE_DIR}"
+    
+    COMMENT "Generating PDF documentation into the docs/ directory..."
+    VERBATIM
+) 
 
 # Installiere lokal im Build-Verzeichnis statt in /usr/local/
 if(NOT CMAKE_INSTALL_PREFIX_INITIALIZED_TO_DEFAULT)
@@ -115,6 +133,7 @@ endforeach()
 # 2. Targets für JEDE SEKTION
 foreach(
         # SECTION-INSTALL-TARGETS 
+ 	section21
  	section20
  	section19
  	section18

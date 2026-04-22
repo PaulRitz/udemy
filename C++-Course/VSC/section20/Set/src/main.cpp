@@ -58,7 +58,7 @@ public:
 };
 
 template<typename T>
-void display(set<T> &source){
+void display(const set<T> &source){
     cout << "[ ";
     for(const auto &val : source){
         cout << val << " ";
@@ -87,9 +87,9 @@ int main() {
         cout << "10 is not in the set" << endl;
     }
 
-    auto it = s1.find(5);
-    if(it != s1.end()){
-        cout << "Found: " << *it << endl;
+    auto it1 = s1.find(5);
+    if(it1 != s1.end()){
+        cout << "Found: " << *it1 << endl;
     }
 
     s1.clear();
@@ -109,21 +109,48 @@ int main() {
     stooges.emplace("James", 50);
     display(stooges);
 
-    auto it = stooges.find(Person3{"Moe",2});
-    if(it != stooges.end()){
-        stooges.erase(it);
+    stooges.emplace("Frank", 50);
+    display(stooges);
+
+    auto it2 = stooges.find(Person3{"Moe",2});
+    if(it2 != stooges.end()){
+        stooges.erase(it2);
     }
 
     display(stooges);
 
-    it = stooges.find(Person3("XXXX",50));
+    it2 = stooges.find(Person3("XXXX",50));     // will remove James
+                                                // uses operator< to determine
 
-    if(it != stooges.end()){
-        stooges.erase(it);
+    if(it2 != stooges.end()){
+        stooges.erase(it2);
     }
     display(stooges);
 
     // Example 2
+    cout << "======================" << endl;
+    // Example 3
+
+    set<string> str1{"A","B","C"};
+    display(str1);
+
+    auto result = str1.insert("D");
+    display(str1);
+
+    cout << boolalpha;
+    cout << "first: " << *(result.first) << endl;
+    cout << "second: " << result.second << endl;
+
+    cout << endl;
+
+    result = str1.insert("A");
+    display(str1);
+
+    cout << boolalpha;
+    cout << "first: " << *(result.first) << endl;
+    cout << "second: " << result.second << endl;
+
+    // Example 3
     cout << "======================" << endl;
 
     std::cout << std::endl;
