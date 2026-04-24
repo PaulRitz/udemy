@@ -97,7 +97,8 @@ public:
         int count {};
         copy_if(people.begin(),people.end(),
                 back_inserter(result),[this,&count,max_age](const Person5 &p){
-                    return p.get_age() > max_age && count <= this->max_people;
+                    // count++;
+                    return p.get_age() > max_age && ++count <= this->max_people;
                 });
         return result;
     }
