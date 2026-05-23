@@ -27,17 +27,20 @@ using namespace std;
 
 int main() {
 
-    ToConvert obj1 {15};
-    obj1.set_objName("Object 01 - init with int");
-    obj1.display_obj();
+    // ToConvert obj1 {15};
+    // obj1.set_objName("Object 01 - init with int");
+    // obj1.display_obj();
     
-    ToConvert obj2 {"0xFF8F"};
-    obj2.set_objName("Object 02 - init with hex");
-    obj2.display_obj();
+    // ToConvert obj2 {"0xFF8F"};
+    // obj2.set_objName("Object 02 - init with hex");
+    // obj2.display_obj();
 
-    ToConvert obj3 {"0b11011"};
-    obj3.set_objName("Object 03 - init with bin");
-    obj3.display_obj();
+    // ToConvert obj3 {"0b11011"};
+    // obj3.set_objName("Object 03 - init with bin");
+    // obj3.display_obj();
+
+    ToConvert obj {"0b11111110"};
+    obj.display_obj();
 
     cout << endl;
     return 0;
